@@ -4,9 +4,9 @@
 ---
 
 <h1 id="btrs-microservices-version-1.00">BTRS Microservices Version 1.00</h1>
-<h4 id="table-of-contents">Table of Contents</h4>
+<h2 id="table-of-contents">Table of Contents</h2>
 <ol>
-<li>[About This Document](#about this document)
+<li><a href="#about-this-document">About This Document</a>
 <ul>
 <li>Audience</li>
 </ul>
@@ -20,12 +20,12 @@
 <li>Centerline Routes</li>
 </ul>
 </li>
-</ol>
-<h4 id="perp-year-api">Perp Year API</h4>
-<p>4.1 Perp Year Object<br>
+<li>Perp Year API<br>
+4.1 Perp Year Object<br>
 4.2 Get Current Perp Year<br>
 4.3 Get Current Perp Year by Year<br>
-4.4 Get Perp Year Bounds</p>
+4.4 Get Perp Year Bounds</li>
+</ol>
 <h4 id="routes-api">Routes API</h4>
 <p>5.1 Get Jurisdiction Codes<br>
 5.2 Get Trans Route Codes<br>
@@ -45,14 +45,9 @@
 <p>7.1 EndPoints</p>
 <h1 id="about-this-document">About This Document</h1>
 <p>The purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.</p>
-<ol>
-<li></li>
-<li>1.1Audience</li>
-</ol>
+<h2 id="audience">Audience</h2>
 <p>This document is intended for developers wishing to begin testing the BTRS Microservices API.</p>
-<ol>
-<li>2Environments</li>
-</ol>
+<h2 id="environments">Environments</h2>
 <p>Currently there is only one environment and it is considered temporary until the Docker environment is established.  For the services, the following base URL shall be used:</p>
 <p><strong><a href="http://dotibtrsd01:8080">http://dotibtrsd01:8080</a></strong></p>
 <p>All endpoints provided hereafter shall be assumed that the base URL is prepended to it.  In the future, a DNS entry shall be made to direct traffic via a well known domain name to whatever server matches the environment, so that the server can be swapped without affecting calling environments.</p>
