@@ -398,7 +398,7 @@ The response returns the routeId for the LrmType.  The nlfIdSt is always include
 - stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 
 &#160;&#160;&#160;&#160;&#160;**Example Request:** Get a county route boundary
-GET /routes/bounds/SFRAIR00070\*\*C?year=2018&amp;lrmType=CTL\_3DECIMAL
+GET /routes/bounds/SFRAIR00070\*\*Cyear=2018&amp;lrmType=CTL\_3DECIMAL
 
 ```json
 {
@@ -876,5 +876,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - *GET /boundaries/townships }* – Retrieve all township records for the current perp year.
 - *GET /boundaries/townships?county={countyCode}* – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODgzMDE5NzZdfQ==
+eyJoaXN0b3J5IjpbNjg1OTEzMzg3XX0=
 -->
