@@ -5,7 +5,7 @@
 	* [Audience](#audience)
 2.  [Environments](#environments)
 3.  [API Overview](#api-overview)
-	* LRS and LRM
+	* [LRS and LRM](#lrs-and-lrm)
 	* Temporality
 	* LRM Type
 	* Centerline Routes
@@ -56,8 +56,7 @@ The API is currently divided up into a couple different base endpoints which are
 - Boundary – areas that represent a boundary attribute such as municipalities, counties, townships and districts.
 - Conflation – transforming events from one perp year to another
 
-1.
-  1. 3.1LRS and LRM
+### LRS and LRM
 
 LRS stands for Linear Referencing System and is a collection of LRMs that can be related and conflated.
 
@@ -547,5 +546,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA1OTU5NzhdfQ==
+eyJoaXN0b3J5IjpbLTk3MzI1OTM1NCwtMTk4MDU5NTk3OF19
 -->
