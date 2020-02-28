@@ -566,15 +566,15 @@ The response object minimally includes a list of objects that can contain only a
 
 The response object is a json map object where the key is the original id of the requested data, and the value is an array of the linear events that satisfy the request from the posted data.
 
-&#32;&#32;&#32;*Event Object Common Fields*
+&#160;&#160;&#160;&#160;*Event Object Common Fields*
 
-- Id – a unique id assigned to this event
-- perpYear – The perpYear to which the data matches
-- nlfId – The routeId for the county LRM
-- nlfIdSt – The routeId for the state LRM
-- beginMeasure – The beginMeasure for this event based on the lrmType
-- endMeasure – The endMeasure for this event based on the lrmType
-- primary – Boolean value indicating the section is primary
+- Id – A unique id assigned to this event.
+- perpYear – The perpYear to which the data matches.
+- nlfId – The routeId for the county LRM.
+- nlfIdSt – The routeId for the state LRM.
+- beginMeasure – The beginMeasure for this event based on the lrmType.
+- endMeasure – The endMeasure for this event based on the lrmType.
+- primary – Boolean value indicating the section is primary.
 - primarySegment.nlfId – provided when the current segment is secondary.  This is the nlfId of the primary county route over this section
 - primarySegment.beginMeasure - The primary route&#39;s beginMeasure correlating to the segment&#39;s beginMeasure
 - primarySegment.endMeasure - The primary route&#39;s endMeasure correlating to the segment&#39;s endMeasure
@@ -683,7 +683,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTEzMjA1MjQsODQzMzc4OTE3LC00OT
-IxOTIxMjQsLTExMjczNjE3NjYsLTIwNDk4ODYyODcsLTY1Mjc4
-MzM0NCwxODY0MTYzNjM5XX0=
+eyJoaXN0b3J5IjpbMTE2ODMyNTEzLDg0MzM3ODkxNywtNDkyMT
+kyMTI0LC0xMTI3MzYxNzY2LC0yMDQ5ODg2Mjg3LC02NTI3ODMz
+NDQsMTg2NDE2MzYzOV19
 -->
