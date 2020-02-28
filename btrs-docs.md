@@ -838,26 +838,44 @@ The request body structure is identical to **Street Event Search** end point, wi
 
 **Example Request Body**
 
-
-
+```json
+    "perpYear": 2018,
+    "counties": ["FRA"],
+    "routeCodes" : ["sr", "cr"],
+    "muniFipsCodes" : ["06278"],
+    "maxResults": 3
+}
+```
 #### Response
 
 Based on the request example above, the following is an example response.
-
+```json
+{
+    "total": 3,
+    "success": true,
+    "fieldErrors": {},
+    "errorMessages": [],
+    "items": [
+        "BROAD",
+        "CASSADY",
+        "COLLEGE"
+    ]
+}
+```
 ## Boundary API
 
 This API provides end points for retrieving boundary datasets such as County, Municipality, and Townships.
 
 ### EndPoints
 
-- GET /boundaries/counties/ - Retrieves county information along with name and district
-- GET /boundaries/counties/{districtNbr} - Retrieves county information along with name and district for a specific district.
-- GET /boundaries/counties/ids - Retrieves just the list of county 3-character id codes.
-- GET /boundaries/municipalities } – retrieve all municipality records for the current perp year.
-- GET /boundaries/municipalities?county={countyCode} – retrieve the municipality list by county code for the current perp year.
-- GET /boundaries/townships } – retrieve all township records for the current perp year.
-- GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
+- GET /boundaries/counties/ – Retrieves county information along with name and district
+- GET /boundaries/counties/{districtNbr} – Retrieves county information along with name and district for a specific district.
+- GET /boundaries/counties/ids – Retrieves just the list of county 3-character id codes.
+- GET /boundaries/municipalities } – Retrieve all municipality records for the current perp year.
+- GET /boundaries/municipalities?county={countyCode} – Retrieve the municipality list by county code for the current perp year.
+- GET /boundaries/townships } – Retrieve all township records for the current perp year.
+- GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1ODU0NzQ3LC01NTc1OTAxMDUsNTczOT
-A0NDY3XX0=
+eyJoaXN0b3J5IjpbMjEzMjY0MTYxMCwtNTU3NTkwMTA1LDU3Mz
+kwNDQ2N119
 -->
