@@ -439,22 +439,17 @@ This end point retrieves street name events based on the posted search criteria
 - **townshipFipsCodes –** {List\&lt;String\&gt;, optional} List of township FIPS codes on which to filter.
 - **streetNames –** {List\&lt;String\&gt;, optional} List of street names on which to filter.
 
-1.
-  1.
-    1. 6.2.2Response
+#### Response
 
 Based on the example request body shown above
 
-1.
-  1. 6.3Street Name Search
+### Street Name Search
 
 Retrieves a unique list of street names based on the provided criteria provided in the request body
 
 **End Point:** GET /streets/names
 
-1.
-  1.
-    1. 6.3.1Request Body
+#### Request Body
 
 The request body structure is identical to **Street Event Search** end point, with the additions/changes of the following attributes:
 
@@ -463,18 +458,15 @@ The request body structure is identical to **Street Event Search** end point, wi
 
 **Example Request Body**
 
-1.
-  1.
-    1. 6.3.2Response
+#### Response
 
 Based on the request example above, the following is an example response.
 
-1. 7Boundary API
+## Boundary API
 
 This API provides end points for retrieving boundary datasets such as County, Municipality, and Townships.
 
-1.
-  1. 7.1EndPoints
+### EndPoints
 
 - GET /boundaries/counties/ - Retrieves county information along with name and district
 - GET /boundaries/counties/{districtNbr} - Retrieves county information along with name and district for a specific district.
@@ -484,6 +476,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MzczMzY4Myw1MTg2Mzk3MzYsLTc1Mj
-IxMzY3NSwtNjE2MjgxNjkzXX0=
+eyJoaXN0b3J5IjpbLTE0Njk1MDkxNTIsMTc1MzczMzY4Myw1MT
+g2Mzk3MzYsLTc1MjIxMzY3NSwtNjE2MjgxNjkzXX0=
 -->
