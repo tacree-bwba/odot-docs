@@ -151,6 +151,10 @@ Retrieves the range of available perp years.  The result is an array with the mi
 
 #### Response
 
+
+
+
+
 ## Routes API
 
 The routes API provides information about finding and searching routes as well as event information about routes.
@@ -476,7 +480,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTA5NTAyOCwtMTcxNDgwNzE4LC0xMD
-g5ODA1MzU1LC0xNDY5NTA5MTUyLDE3NTM3MzM2ODMsNTE4NjM5
-NzM2LC03NTIyMTM2NzUsLTYxNjI4MTY5M119
+eyJoaXN0b3J5IjpbNTAwODc3MzcyXX0=
 -->
