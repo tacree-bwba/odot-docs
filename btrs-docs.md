@@ -34,7 +34,7 @@
 
 ## About This Document
 
-The bogus word  purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.
+The purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.
 
 ### Audience
 This document is intended for developers wishing to begin testing the BTRS Microservices API.
@@ -62,8 +62,7 @@ LRS stands for Linear Referencing System and is a collection of LRMs that can be
 
 LRM stands for Linear Referencing Method and represents a type of linear referencing supported by RIMS.  For purposes of this document, 2 LRMs are the focus, County and State.  Further, each of the LRMs are broken down by perpYear, so each year a new version of these LRMs are published.
 
-1.
-  1. 3.2Temporality
+Temporality
 
 Unlike traditional BTRS based data, all data provided by the API has a temporal component to it identified by the data&#39;s Perp Year.  Perp Year identifies the year from which the data is being published, and is usually 1 year less than the current calendar year.  For example, the perp year 2018 represents the version of the roadway inventory that was published and to which all data as of 1/12019 is collected against.  A concrete example of this would be 2019 Pavement Condition Data (PCR) which is collected and published against the 2018 perp year LRS.
 
@@ -546,5 +545,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTcyMzg5MjBdfQ==
+eyJoaXN0b3J5IjpbLTExMDc5ODE1MDEsLTExMTcyMzg5MjBdfQ
+==
 -->
