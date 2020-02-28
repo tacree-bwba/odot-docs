@@ -552,11 +552,11 @@ This end point retrieves route linear and point events based on the configuratio
 - **attributes** – {List\&lt;String\&gt;, optional} – This is an alternative to the allAttributes option, where the caller may specify which attributes are to be included in the result. Reducing the number of attributes usually reduces the number of segments that will be returned and lightens the response payload.
 - **continuous** – {Boolean, default: true} – Relevant when the County Route LRM Type has been selected.  This indicator implies that when routes that leave the county (County leave/reenters) and return are part of the result, that the segments related to the sections that left the county are included in the result.
 - **segments** – {List\&lt;Object\&gt;, optional} – The list of segments to return as part of the result.
-  - **oo**** id –** {String, optional}} An id that is added to the response to help track this requested segment.  The id becomes an attribute in the response containing the array of segments that were retrieved and associated with this request.  If an id is NOT provided, then the index of the item from the request is used.  Note that ids can be numbers or strings.
-  - **oo**** perpYear–** {Integer, optional} The perp year on which to search for the event.  This field is optional, and if not provided, shall use the current active perp year.
-  - **oo**** routeId–** {String, required} the route identifier for the event to be retrieved.  The LrmType shall dictate whether this is a state route id or a county route id.
-  - **oo**** beginMeasure –** {Decimal, optional, defaults to beginning of route} The begin measure of the events to retrieve.
-  - **oo**** endMeasure –** {Decimal, optional, defaults to end of route} The end measure of the events to retrieve.
+  - **id** – {String, optional} – An id that is added to the response to help track this requested segment.  The id becomes an attribute in the response containing the array of segments that were retrieved and associated with this request.  If an id is NOT provided, then the index of the item from the request is used.  Note that ids can be numbers or strings.
+  - **perpYear** – {Integer, optional} – The perp year on which to search for the event.  This field is optional, and if not provided, shall use the current active perp year.
+  - **routeId** – {String, required} – The route identifier for the event to be retrieved.  The LrmType shall dictate whether this is a state route id or a county route id.
+  - **beginMeasure** – {Decimal, optional, defaults to beginning of route} – The begin measure of the events to retrieve.
+  - **endMeasure –** {Decimal, optional, defaults to end of route} The end measure of the events to retrieve.
 
 #### Response
 
@@ -686,6 +686,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MjE5MjEyNCwtMTEyNzM2MTc2NiwtMj
-A0OTg4NjI4NywtNjUyNzgzMzQ0LDE4NjQxNjM2MzldfQ==
+eyJoaXN0b3J5IjpbMTM1MjUyMzY5LC00OTIxOTIxMjQsLTExMj
+czNjE3NjYsLTIwNDk4ODYyODcsLTY1Mjc4MzM0NCwxODY0MTYz
+NjM5XX0=
 -->
