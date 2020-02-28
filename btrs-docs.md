@@ -34,7 +34,7 @@
 
 ## About This Document
 
-The purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.
+The bogus word  purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.
 
 ### Audience
 This document is intended for developers wishing to begin testing the BTRS Microservices API.
@@ -546,5 +546,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzI1OTM1NF19
+eyJoaXN0b3J5IjpbLTExMTcyMzg5MjBdfQ==
 -->
