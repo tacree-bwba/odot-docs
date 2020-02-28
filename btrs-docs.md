@@ -203,15 +203,38 @@ Retrieves the available Trans Route Codes component of the NlfId. This starts at
 
 #### Response
 ```json
+{
+    "total": 15,
+    "fieldErrors": {},
+    "success": true,
+    "errorMessages": [],
+    "items": [
+        {
+            "id": "IR",
+            "shortName": "IR",
+            "code": "IR",
+            "active": true,
+            "longName": "Interstate Route",
+            "sequence": 10
+        },
+        {
+            "id": "US",
+            "shortName": "US",
+            "code": "US",
+            "active": true,
+            "longName": "United State Route",
+            "sequence": 20
+        },
+
+. . . 
+     ]
+}
 
 ```
 
 ### Get Local Suffix Codes
 
-Retrieves the available Local Suffix Codes component of the NlfId.  This is the 12
-
-# th
- character of the NlfId.
+Retrieves the available Local Suffix Codes component of the NlfId.  This is the 12<sup>th</sup> character of the NlfId.
 
 **End Point:** GET /routes/local\_suffix
 
@@ -219,10 +242,7 @@ Retrieves the available Local Suffix Codes component of the NlfId.  This is the 
 
 ### Get State Suffix Codes
 
-Retrieves the available State Suffix Codes component of the NlfId.  This is the 13
-
-# th
- character of the NlfId.
+Retrieves the available State Suffix Codes component of the NlfId.  This is the 13<sup>th</sup> character of the NlfId.
 
 **End Point:** GET /routes/state\_suffix
 
@@ -231,8 +251,7 @@ Retrieves the available State Suffix Codes component of the NlfId.  This is the 
 ### Get Direction Codes
 
 Retrieves the available Direction Codes component of the NlfId.  This is the 14
-
-# th
+<sup>th</sup> th
  character of the NlfId. Note that this service is provided for completeness, though currently it only carries two values: [&#39;N&#39;, &#39;C&#39;].  For purposes of BTRS, only &#39;C&#39; is used as the &#39;N&#39; designation indicates a non-cardinal route which is not yet ready for public consumption.
 
 **End Point:** GET /routes/direction\_codes
@@ -508,6 +527,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTY0NTUwNiwxODQ3NTQ1NTE1LDUwMD
-g3NzM3Ml19
+eyJoaXN0b3J5IjpbLTE1NzU3NTgzOTksMTg0NzU0NTUxNSw1MD
+A4NzczNzJdfQ==
 -->
