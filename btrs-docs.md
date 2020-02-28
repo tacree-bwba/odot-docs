@@ -15,16 +15,16 @@
 	* [Get Current Perp Year by Year](#get-current-perp-year-by-year) 
 	* [Get Perp Year Bounds](#get-perp-year-bounds)
 5.  [Routes API](#routes-api)
-5.1 Get Jurisdiction Codes
-5.2 Get Trans Route Codes
-5.3 Get Local Suffix Codes
-5.4 Get State Suffix Codes
-5.5 Get Direction Codes
-5.6 County Route Search
-5.7 Route Bounds Search
-5.8 Route Search
-5.9 Route Roadway Inventory Events
-5.10 Get Routes RI Attributes
+	* [Get Jurisdiction Codes](#get-jurisdiction-codes)
+	* [Get Trans Route Codes](#get-trans-route-codes)
+	* [Get Local Suffix Codes](#get-local-suffix-codes)
+	* [Get State Suffix Codes](#get-state-suffix-codes)
+	* [Get Direction Codes]
+	* [County Route Search]
+	* [Route Bounds Search]
+	* [Route Search]
+	* [Route Roadway Inventory Events]
+	* [Get Routes RI Attributes]
 ####  Streets API
 6.1 Street Name Attributes
 6.2 Street Event Search
@@ -490,6 +490,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4NjM5NzM2LC03NTIyMTM2NzUsLTYxNj
-I4MTY5M119
+eyJoaXN0b3J5IjpbLTEzNDg4NDk3MjUsNTE4NjM5NzM2LC03NT
+IyMTM2NzUsLTYxNjI4MTY5M119
 -->
