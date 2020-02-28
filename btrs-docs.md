@@ -53,8 +53,8 @@ The API is currently divided up into a couple different base endpoints which are
 - *Routes* – Finding information about a route.
 - *Route Events* – Reading information about point and linear events.
 - *Streets* – API for retrieving information about street events including their relationships to municipalities and townships.
-- *Boundary* – areas that represent a boundary attribute such as municipalities, counties, townships and districts.
-- *Conflation* – transforming events from one perp year to another
+- *Boundary* – Areas that represent a boundary attribute such as municipalities, counties, townships and districts.
+- *Conflation* – Transforming events from one perp year to another.
 
 ### LRS and LRM
 
@@ -72,7 +72,7 @@ Many of the requests have an optional lrmType parameter.  The LRM Type identifie
 
 The LRM Types are identified using one of the following 2 codes:
 
-- CTL\_3DECIMAL – this is the county traversal using 3-decimal measure accuracy.
+- CTL\_3DECIMAL – This is the county traversal using 3-decimal measure accuracy.
 - STL\_3DECIMAL – This is the state traversal using 3-decimal measure accuracy.
 
 #### LRM Type Traversal Fields
@@ -534,5 +534,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjIxMzY3NSwtNjE2MjgxNjkzXX0=
+eyJoaXN0b3J5IjpbLTE3OTE5OTgxNzMsLTc1MjIxMzY3NSwtNj
+E2MjgxNjkzXX0=
 -->
