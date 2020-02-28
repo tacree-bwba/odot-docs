@@ -3,87 +3,47 @@
 
 ---
 
-<h2 id="btrs-microservices">BTRS Microservices</h2>
-<h2 id="quick-overview">Quick Overview</h2>
-<p>Version 1.00</p>
-
-<table>
-<thead>
-<tr>
-<th><strong>Revision History</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Date</strong></td>
-</tr>
-<tr>
-<td>2/18/2020</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table><p>Table of Contents</p>
-<p>1        About This Document        3</p>
-<p>1.1        Audience        3</p>
-<p>2        Environments        4</p>
-<p>3        API Overview        4</p>
-<p>3.1        LRS and LRM        4</p>
-<p>3.2        Temporality        4</p>
-<p>3.3        LRM Type        5</p>
-<p>3.3.1        LRM Type Traversal Fields        5</p>
-<p>3.4        Centerline Routes        6</p>
-<p>4        Perp Year API        7</p>
-<p>4.1        Perp Year Object        7</p>
-<p>4.1.1        Attributes        7</p>
-<p>4.2        Get Current Perp Year        7</p>
-<p>4.3        Get Current Perp Year by Year        7</p>
-<p>4.3.1        Parameters        7</p>
-<p>4.4        Get Perp Year Bounds        7</p>
-<p>4.4.1        Response        8</p>
-<p>5        Routes API        8</p>
-<p>5.1        Get Jurisdiction Codes        8</p>
-<p>5.1.1        Response        8</p>
-<p>5.2        Get Trans Route Codes        9</p>
-<p>5.2.1        Response        9</p>
-<p>5.3        Get Local Suffix Codes        9</p>
-<p>5.3.1        Response        10</p>
-<p>5.4        Get State Suffix Codes        10</p>
-<p>5.4.1        Response        11</p>
-<p>5.5        Get Direction Codes        11</p>
-<p>5.5.1        Response        11</p>
-<p>5.6        County Route Search        12</p>
-<p>5.6.1        Request Parameters        12</p>
-<p>5.6.2        Response        12</p>
-<p>5.7        Route Bounds Search        13</p>
-<p>5.7.1        Path Variables        13</p>
-<p>5.7.2        Request Parameters        13</p>
-<p>5.7.3        Response        14</p>
-<p>5.8        Route Search        15</p>
-<p>5.8.1        Request Body        15</p>
-<p>5.8.2        Response        16</p>
-<p>5.8.3        Example Request:        16</p>
-<p>5.9        Route Roadway Inventory Events        18</p>
-<p>5.9.1        Request Body        18</p>
-<p>5.9.2        Response        19</p>
-<p>5.9.3        Example Request:        20</p>
-<p>5.10        Get Routes RI Attributes        22</p>
-<p>5.10.1        Response        22</p>
-<p>6        Streets API        22</p>
-<p>6.1        Street Name Attributes        22</p>
-<p>6.1.1        Response        23</p>
-<p>6.2        Street Event Search        23</p>
-<p>6.2.1        Request Body        23</p>
-<p>6.2.2        Response        24</p>
-<p>6.3        Street Name Search        25</p>
-<p>6.3.1        Request Body        26</p>
-<p>6.3.2        Response        26</p>
-<p>7        Boundary API        26</p>
-<p>7.1        EndPoints        26</p>
+<h1 id="btrs-microservices-version-1.00">BTRS Microservices Version 1.00</h1>
+<h4 id="table-of-contents">Table of Contents</h4>
 <ol>
-<li>1About This Document</li>
+<li>[About This Document](#about this document)
+<ul>
+<li>Audience</li>
+</ul>
+</li>
+<li>Environments</li>
+<li>API Overview
+<ul>
+<li>LRS and LRM</li>
+<li>Temporality</li>
+<li>LRM Type</li>
+<li>Centerline Routes</li>
+</ul>
+</li>
 </ol>
+<h4 id="perp-year-api">Perp Year API</h4>
+<p>4.1 Perp Year Object<br>
+4.2 Get Current Perp Year<br>
+4.3 Get Current Perp Year by Year<br>
+4.4 Get Perp Year Bounds</p>
+<h4 id="routes-api">Routes API</h4>
+<p>5.1 Get Jurisdiction Codes<br>
+5.2 Get Trans Route Codes<br>
+5.3 Get Local Suffix Codes<br>
+5.4 Get State Suffix Codes<br>
+5.5 Get Direction Codes<br>
+5.6 County Route Search<br>
+5.7 Route Bounds Search<br>
+5.8 Route Search<br>
+5.9 Route Roadway Inventory Events<br>
+5.10 Get Routes RI Attributes</p>
+<h4 id="streets-api">Streets API</h4>
+<p>6.1 Street Name Attributes<br>
+6.2 Street Event Search<br>
+6.3 Street Name Search</p>
+<h4 id="boundary-api">Boundary API</h4>
+<p>7.1 EndPoints</p>
+<h1 id="about-this-document">About This Document</h1>
 <p>The purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.</p>
 <ol>
 <li></li>
