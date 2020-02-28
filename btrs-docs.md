@@ -616,7 +616,7 @@ POST /routes/ri/events
   ]
 }
 ```
-**Response**
+&#160;&#160;&#160;&#160;&#160;**Response**
 ```json
 {
     "0": [
@@ -676,7 +676,7 @@ POST /routes/ri/events
 
 Retrieves the available attributes/metadata for the Roadway Inventory (RI) dataset.  The attributes are available for use with the **Route Roadway Inventory Events** end point.
 
-**End Point:** GET /routes/ri/attributes
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/ri/attributes
 
 #### Response
 ```json
@@ -710,7 +710,7 @@ The data also relates the street name to the governing body of the route, specif
 
 Retrieves the available attributes/metadata for the Street Event dataset.  The attributes are available for use with the **Street Search** end point.
 
-**End Point:** GET /streets/attributes
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /streets/attributes
 
 #### Response
 ```json
@@ -745,7 +745,7 @@ Retrieves the available attributes/metadata for the Street Event dataset.  The a
 
 This end point retrieves street name events based on the posted search criteria
 
-**End Point:** POST /streets/search
+&#160;&#160;&#160;&#160;&#160;**End Point:** POST /streets/search
 
 #### Request Body
 ```json
@@ -827,7 +827,7 @@ Based on the example request body shown above.
 
 Retrieves a unique list of street names based on the provided criteria provided in the request body.
 
-**End Point:** GET /streets/names
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /streets/names
 
 #### Request Body
 
@@ -876,6 +876,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – Retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjgwNjMwMzcsMjEzMjY0MTYxMCwtNT
-U3NTkwMTA1LDU3MzkwNDQ2N119
+eyJoaXN0b3J5IjpbLTY2MjUxNzc2Ml19
 -->
