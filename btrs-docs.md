@@ -453,7 +453,7 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 - **stateLrm** – {Boolean, default: false} – This indicates that the state LRM attributes should be included in the query and result, in this case meaning the nlfIdSt, stlBeginNbr, and stlEndNbr
 - **countyLrm** – {Boolean, default: true} – This indicates that the county LRM attributes should be included in the query and result, in this case meaning the nlfId, ctlBeginNbr, and ctlEndNbr
 - **jurisdictions** – {List<String&#62;, optional} – List of route jurisdiction codes on which to filter.
-- **counties** – {List<String&#62;, optional}} – List of county codes on which to filter.
+- **counties** – {List<String&#62;, optional} – List of county codes on which to filter.
 - **routeCodes** – {List\&lt;String\&gt;, optional} – List of route trans route codes on which to filter.
 - **routeNbrs** – {List\&lt;String\&gt;, optional} – List of route numbers on which to filter.
 - **extensionCodes** – {List\&lt;String\&gt;, optional} – List of route extension codes on which to filter.
@@ -876,5 +876,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - *GET /boundaries/townships }* – Retrieve all township records for the current perp year.
 - *GET /boundaries/townships?county={countyCode}* – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzE1OTI3MjhdfQ==
+eyJoaXN0b3J5IjpbLTYzNzA1MzE5XX0=
 -->
