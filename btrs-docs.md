@@ -450,15 +450,15 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 
 - **perpYear** – {Integer, optional} The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
 - **includeBoundaries** – {Boolean, optional, default: true} this indicates that route boundaries for the selected LRMs should be included in the result
-- **stateLrm–** {Boolean, default: false} Indicates that the state LRM attributes should be included in the query and result, in this case meaning the nlfIdSt, stlBeginNbr, and stlEndNbr
-- **countyLrm–** {Boolean, default: true} Indicates that the county LRM attributes should be included in the query and result, in this case meaning the nlfId, ctlBeginNbr, and ctlEndNbr
-- **jurisdictions –** {List\&lt;String\&gt;, optional} List of route jurisdiction codes on which to filter.
-- **counties –** {List\&lt;String\&gt;, optional}} List of county codes on which to filter.
-- **routeCodes –** {List\&lt;String\&gt;, optional} List of route trans route codes on which to filter.
-- **routeNbrs –** {List\&lt;String\&gt;, optional} List of route numbers on which to filter.
-- **extensionCodes –** {List\&lt;String\&gt;, optional} List of route extension codes on which to filter.
-- **descriptionCodes –** {List\&lt;String\&gt;, optional} List of route description codes on which to filter.
-- **directionalCodes –** {List\&lt;String\&gt;, optional} List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
+- **stateLrm** – {Boolean, default: false} Indicates that the state LRM attributes should be included in the query and result, in this case meaning the nlfIdSt, stlBeginNbr, and stlEndNbr
+- **countyLrm** – {Boolean, default: true} Indicates that the county LRM attributes should be included in the query and result, in this case meaning the nlfId, ctlBeginNbr, and ctlEndNbr
+- **jurisdictions** – {List\&lt;String\&gt;, optional} List of route jurisdiction codes on which to filter.
+- **counties** – {List\&lt;String\&gt;, optional}} List of county codes on which to filter.
+- **routeCodes** – {List\&lt;String\&gt;, optional} List of route trans route codes on which to filter.
+- **routeNbrs** – {List\&lt;String\&gt;, optional} List of route numbers on which to filter.
+- **extensionCodes** – {List\&lt;String\&gt;, optional} List of route extension codes on which to filter.
+- **descriptionCodes** – {List\&lt;String\&gt;, optional} List of route description codes on which to filter.
+- **directionalCodes** – {List\&lt;String\&gt;, optional} List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
 
 #### Response
 
@@ -640,6 +640,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODMzMTcyOSwtNjUyNzgzMzQ0LDE4Nj
-QxNjM2MzldfQ==
+eyJoaXN0b3J5IjpbLTExNTU5NDUzMTcsLTY1Mjc4MzM0NCwxOD
+Y0MTYzNjM5XX0=
 -->
