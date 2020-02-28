@@ -545,7 +545,7 @@ This end point retrieves route linear and point events based on the configuratio
   ]
 }
 ```
-*Attribute Description*
+***Attribute Description***
 
 - **lrmType** – {String, optional} – This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
 - **allAttributes** – {Boolean, optional, default: false} – This indicates that all available attributes related to an event from the Roadway Inventory should be included in the response.
@@ -876,6 +876,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – Retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjI4NjkxNzEsMjEzMjY0MTYxMCwtNT
-U3NTkwMTA1LDU3MzkwNDQ2N119
+eyJoaXN0b3J5IjpbLTk3Njk4Mzk4NywyMTMyNjQxNjEwLC01NT
+c1OTAxMDUsNTczOTA0NDY3XX0=
 -->
