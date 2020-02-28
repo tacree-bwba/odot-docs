@@ -388,7 +388,7 @@ This end point retrieves route measure bounds information based on a provided ro
 
 The response returns the routeId for the LrmType.  The nlfIdSt is always included in the response.  If the lrmType is STL\_3DECIMAL, then the nlfId is NOT included.  If the lrmType is CTL\_3DECIMAL, then the nlfId is included along with the corresponding measures for the county LRM.
 
-5.7.3.1
+***5.7.3.1***
 
 - nlfId – The routeId for the county LRM.
 - nlfIdSt – The routeId for the state LRM.
@@ -446,7 +446,7 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
     "directionalCodes": ["N", "C"]
 }
 ```
-*Attribute Description*
+***Attribute Description***
 
 - **perpYear** – {Integer, optional} – The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
 - **includeBoundaries** – {Boolean, optional, default: true} – This indicates that route boundaries for the selected LRMs should be included in the result
@@ -464,7 +464,7 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 
 The response object minimally includes a list of objects that can contain only a routeId unless includeBoundaries is set to true.  In this case, it will include either state, county or both LRMs depending on the stateLrm/countyLrm request settings.
 
-*Response Object*
+***Response Object***
 
 - nlfId – The routeId for the county LRM.
 - nlfIdSt – The routeId for the state LRM.
@@ -575,7 +575,7 @@ The response object is a json map object where the key is the original id of the
 - beginMeasure – The beginMeasure for this event based on the lrmType.
 - endMeasure – The endMeasure for this event based on the lrmType.
 - primary – Boolean value indicating the section is primary.
-- primarySegment.nlfId – provided when the current segment is secondary.  This is the nlfId of the primary county route over this section
+- primarySegment.nlfId – Provided when the current segment is secondary.  This is the nlfId of the primary county route over this section.
 - primarySegment.beginMeasure - The primary route&#39;s beginMeasure correlating to the segment&#39;s beginMeasure
 - primarySegment.endMeasure - The primary route&#39;s endMeasure correlating to the segment&#39;s endMeasure
 - leave – Boolean value indicating that the end point of this event is adjacent to a discontinuity
@@ -683,7 +683,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODMyNTEzLDg0MzM3ODkxNywtNDkyMT
-kyMTI0LC0xMTI3MzYxNzY2LC0yMDQ5ODg2Mjg3LC02NTI3ODMz
-NDQsMTg2NDE2MzYzOV19
+eyJoaXN0b3J5IjpbNTczOTA0NDY3XX0=
 -->
