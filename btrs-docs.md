@@ -576,13 +576,13 @@ The response object is a json map object where the key is the original id of the
 - endMeasure – The endMeasure for this event based on the lrmType.
 - primary – Boolean value indicating the section is primary.
 - primarySegment.nlfId – Provided when the current segment is secondary.  This is the nlfId of the primary county route over this section.
-- primarySegment.beginMeasure - The primary route&#39;s beginMeasure correlating to the segment&#39;s beginMeasure
-- primarySegment.endMeasure - The primary route&#39;s endMeasure correlating to the segment&#39;s endMeasure
-- leave – Boolean value indicating that the end point of this event is adjacent to a discontinuity
-- reenter – Boolean value indicating that the begin point of this event is adjacent to a discontinuity
-- overlapInverseInd – Boolean value that indicates that the secondary event is digitized in the opposite direction of its corresponding primary
-- stl3dBeginNbr– The state LRM begin boundary. This is included when the county LRM is requested for reference.
-- stl3dEndNbr– The state LRM end boundary. This is included when the county LRM is requested for reference.
+- primarySegment.beginMeasure – The primary route&#39;s beginMeasure correlating to the segment&#39;s beginMeasure.
+- primarySegment.endMeasure – The primary route&#39;s endMeasure correlating to the segment&#39;s endMeasure.
+- leave – Boolean value indicating that the end point of this event is adjacent to a discontinuity.
+- reenter – Boolean value indicating that the begin point of this event is adjacent to a discontinuity.
+- overlapInverseInd – Boolean value that indicates that the secondary event is digitized in the opposite direction of its corresponding primary.
+- stl3dBeginNbr – The state LRM begin boundary. This is included when the county LRM is requested for reference.
+- stl3dEndNbr – The state LRM end boundary. This is included when the county LRM is requested for reference.
 
 **Event Object Optional Attributes**
 
@@ -683,5 +683,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczOTA0NDY3XX0=
+eyJoaXN0b3J5IjpbMTgzODM2NDU3NSw1NzM5MDQ0NjddfQ==
 -->
