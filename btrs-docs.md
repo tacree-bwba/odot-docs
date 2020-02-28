@@ -328,7 +328,7 @@ This end point is provided to perform fast lookups of a NlfId (county route) bas
 #### Request Parameters
 
 - **route\_criteria** – {String, required} This field must contain a minimum of 3 characters; otherwise, an empty result is returned.  The value is case-insensitive and shall be parsed based on varying assumptions to best determine the user&#39;s intention for which nlfId(s) they are searching.  The goal is to provide the option for shorthanding route names.  For example, FRAIR70 is treated as shorthand for obtaining a result of &#39;SFRAIR00070\*\*C&#39;.
-- **year –** {Integer, optional} The perp year on which to search for the routes.  This field is optional, and if not provided, shall use the current active perp year.
+- **year ** – {Integer, optional} The perp year on which to search for the routes.  This field is optional, and if not provided, shall use the current active perp year.
 - **max\_results –** {Integer, optional but recommended} This parameter indicates the maximum number of results to return from the query.  While it is optional, it is highly recommended to reduce the cost of serializing large payloads down to the user and keep the interface responsive.  A good recommended value for this would be 100 or less.  It is rare that a user would scroll through these results before providing another character that would further narrow the search.
 - **centerline** – {Boolean, optional, default=true} – This field indicates that only Cardinal routes are provided in the result.  It is optional as the default value is set to true.  Non-cardinal routes should only be included in the result with review by the Office of Technical Services to make sure that non-cardinal routes are sustainable for the user&#39;s usage.
 - **counties** – {List\&lt;String\&gt;, optional} an optional list of counties which indicates that they are the only counties included in the search.
@@ -588,5 +588,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTY5OTMzMF19
+eyJoaXN0b3J5IjpbMTYzMDcxMDQ1MiwxMzA1Njk5MzMwXX0=
 -->
