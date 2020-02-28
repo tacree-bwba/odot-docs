@@ -478,13 +478,48 @@ The response object minimally includes a list of objects that can contain only a
 POST /routes/ri/events
 
 **Request Body**
-
+```json
+{
+    "perpYear": 2018,
+    "includeBoundaries": true,
+    "stateLrm": true,
+    "countyLrm": true,
+	  "jurisdictions": [],
+	  "counties": ["FRA"],
+    "routeCodes" : ["IR"],
+    "routeNbrs": ["70"],
+    "extensionCodes": ["*"],
+    "descriptionCodes": ["*"],
+    "directionalCodes": ["N", "C"]
+}
+```
 **Response**
-
-
-
-
-
+```json
+{
+    "total": 2,
+    "success": true,
+    "fieldErrors": {},
+    "errorMessages": [],
+    "items": [
+        {
+            "nlfId": "SFRAIR00070**C",
+            "nlfIdSt": "SIR00070**CPRE",
+            "ctlBeginNbr": 0.000,
+            "ctlEndNbr": 24.940,
+            "stlBeginNbr": 86.043,
+            "stlEndNbr": 110.983
+        },
+        {
+            "nlfId": "SFRAIR00070**N",
+            "nlfIdSt": "SIR00070**NFRA",
+            "ctlBeginNbr": 0.000,
+            "ctlEndNbr": 24.940,
+            "stlBeginNbr": 0.000,
+            "stlEndNbr": 24.940
+        }
+    ]
+}
+```
 ### Route Roadway Inventory Events
 
 This end point retrieves route linear and point events based on the configuration of the request body object.
@@ -637,6 +672,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5Njk1NzI2LC0xMTI3MzYxNzY2LC0yMD
-Q5ODg2Mjg3LC02NTI3ODMzNDQsMTg2NDE2MzYzOV19
+eyJoaXN0b3J5IjpbMTI3MzMwNTIzMiwtMTEyNzM2MTc2NiwtMj
+A0OTg4NjI4NywtNjUyNzgzMzQ0LDE4NjQxNjM2MzldfQ==
 -->
