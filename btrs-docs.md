@@ -321,7 +321,7 @@ Retrieves the available Direction Codes component of the NlfId.  This is the 14<
 
 ### County Route Search
 
-This end point is provided to perform fast lookups of a NlfId (county route) based on search criteria being entered for example by a user in an autocomplete component.  The goal is for this end point to return results quickly so that the user doesn&#39;t experience a relevant delay in the response while typing.
+This end point is provided to perform fast lookups of a NlfId (county route) based on search criteria being entered for example by a user in an autocomplete component.  The goal is for this end point to return results quickly so that the user doesn't experience a relevant delay in the response while typing.
 
 **End Point:** GET /routes/county\_route\_search
 
@@ -588,6 +588,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQ1Mjk0NTUsLTE1NzU3NTgzOTksMT
-g0NzU0NTUxNSw1MDA4NzczNzJdfQ==
+eyJoaXN0b3J5IjpbMTMwNTY5OTMzMF19
 -->
