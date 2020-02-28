@@ -781,12 +781,51 @@ This end point retrieves street name events based on the posted search criteria
 
 Based on the example request body shown above.
 ```json
-
+{
+  "total": 7,
+  "success": true,
+  "fieldErrors": {},
+  "errorMessages": [],
+  "items": [
+    {
+      "nlfId": "SFRAUS00023**C",
+      "perpYear": 2018,
+      "stl3dBeginNbr": 83.730,
+      "reenter": false,
+      "muniFipsCode": "18000",
+      "countyCode": "FRA",
+      "streetName": "HIGH",
+      "muniName": "COLUMBUS",
+      "beginMeasure": 5.410,
+      "leave": false,
+      "stl3dEndNbr": 88.830,
+      "segmentLength": 5.100,
+      "nlfIdSt": "SUS00023**CSCI",
+      "endMeasure": 10.510
+    },
+    {
+      "nlfId": "SFRAUS00023**C",
+      "perpYear": 2018,
+      "stl3dBeginNbr": 93.630,
+      "reenter": false,
+      "muniFipsCode": "18000",
+      "countyCode": "FRA",
+      "streetName": "INDIANOLA",
+      "muniName": "COLUMBUS",
+      "beginMeasure": 15.310,
+      "leave": false,
+      "stl3dEndNbr": 96.850,
+      "segmentLength": 3.220,
+      "nlfIdSt": "SUS00023**CSCI",
+      "endMeasure": 18.530
+    },
+    ...
+  ]
+}        
 ```
-
 ### Street Name Search
 
-Retrieves a unique list of street names based on the provided criteria provided in the request body
+Retrieves a unique list of street names based on the provided criteria provided in the request body.
 
 **End Point:** GET /streets/names
 
@@ -794,10 +833,12 @@ Retrieves a unique list of street names based on the provided criteria provided 
 
 The request body structure is identical to **Street Event Search** end point, with the additions/changes of the following attributes:
 
-- **maxResults –** {number, optional} The maximum number of results to return.  This field is highly recommended for broad searches, especially where this might be used in an autocomplete interface scenario.
-- **lrmType** – This field is ignored as it doesn&#39;t impact the result
+- **maxResults** – {number, optional} – The maximum number of results to return.  This field is highly recommended for broad searches, especially where this might be used in an autocomplete interface scenario.
+- **lrmType** – This field is ignored as it doesn't impact the result.
 
 **Example Request Body**
+
+
 
 #### Response
 
@@ -817,6 +858,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4ODg5NzA1LC01NTc1OTAxMDUsNTczOT
+eyJoaXN0b3J5IjpbMzQ1ODU0NzQ3LC01NTc1OTAxMDUsNTczOT
 A0NDY3XX0=
 -->
