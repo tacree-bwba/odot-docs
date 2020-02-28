@@ -527,11 +527,25 @@ This end point retrieves route linear and point events based on the configuratio
 **End Point:** POST /routes/ri/events/
 
 #### Request Body
-
-1.
-  1.
-    1.
-      1. 5.9.1.1Attribute Description
+```json
+{
+  "lrmType": "CTL_3DECIMAL",
+  "allAttributes": true,
+  "segments": [
+    {
+      "id": "a",
+      "routeId": "SFRASR00003**C"
+    },
+    {
+      "perpYear": 2018,
+      "routeId": "SFRAIR00071**C",
+      "beginMeasure": 10,
+      "endMeasure": 18
+    }
+  ]
+}
+```
+*Attribute Description*
 
 - **lrmType–** {String, optional} This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
 - **allAttributes –** {Boolean, optional, default: false} this indicates that all available attributes related to an event from the Roadway Inventory should be included in the response.
@@ -672,6 +686,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzMwNTIzMiwtMTEyNzM2MTc2NiwtMj
+eyJoaXN0b3J5IjpbMTQ0MjIwNDI0NSwtMTEyNzM2MTc2NiwtMj
 A0OTg4NjI4NywtNjUyNzgzMzQ0LDE4NjQxNjM2MzldfQ==
 -->
