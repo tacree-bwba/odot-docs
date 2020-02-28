@@ -772,14 +772,17 @@ This end point retrieves street name events based on the posted search criteria
 - **routeNbrs** – {List<String&#62;, optional} – List of route numbers on which to filter.
 - **extensionCodes** – {List<String&#62;, optional} – List of route extension codes on which to filter.
 - **descriptionCodes** – {List<String&#62;, optional} List of route description codes on which to filter.
-- **directionalCodes –** {List<String&#62;, optional} – List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
-- **muniFipsCodes –** {List\&lt;String&#62;, optional} List of municipal FIPS codes on which to filter.
-- **townshipFipsCodes –** {List\&lt;String&#62;, optional} List of township FIPS codes on which to filter.
-- **streetNames –** {List\&lt;String&#62;, optional} List of street names on which to filter.
+- **directionalCodes** – {List<String&#62;, optional} – List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
+- **muniFipsCodes** – {List<String&#62;, optional} – List of municipal FIPS codes on which to filter.
+- **townshipFipsCodes** – {List<String&#62;, optional} – List of township FIPS codes on which to filter.
+- **streetNames** – {List<String&#62;, optional} – List of street names on which to filter.
 
 #### Response
 
-Based on the example request body shown above
+Based on the example request body shown above.
+```json
+
+```
 
 ### Street Name Search
 
@@ -814,6 +817,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc1MTI2MzYxLC01NTc1OTAxMDUsNTczOT
+eyJoaXN0b3J5IjpbOTc4ODg5NzA1LC01NTc1OTAxMDUsNTczOT
 A0NDY3XX0=
 -->
