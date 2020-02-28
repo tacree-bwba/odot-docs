@@ -546,3 +546,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/municipalities?county={countyCode} – retrieve the municipality list by county code for the current perp year.
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5ODA1OTU5NzhdfQ==
+-->
