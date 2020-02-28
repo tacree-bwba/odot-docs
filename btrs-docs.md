@@ -765,17 +765,17 @@ This end point retrieves street name events based on the posted search criteria
 - **perpYear** – {Integer, optional} – The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
 - **lrmType** {String, optional} – This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
 - **allAttributes** – {Boolean, optional, default: false} – This indicates that all available attributes related to an event from the Street Names should be included in the response.
-- **attributes** – {List<String\&gt;, optional} – This is an alternative to the allAttributes option, where the caller may specify which attributes are to be included in the result. Reducing the number of attributes usually reduces the number of segments that will be returned and lightens the response payload.
-- **jurisdictions –** {List\&lt;String&#62;, optional} List of route jurisdiction codes on which to filter.
-- **counties –** {List\&lt;String&#62;, optional} List of county codes on which to filter.
-- **routeCodes –** {List\&lt;String\&gt;, optional} List of route trans route codes on which to filter.
-- **routeNbrs –** {List\&lt;String\&gt;, optional} List of route numbers on which to filter.
-- **extensionCodes –** {List\&lt;String\&gt;, optional} List of route extension codes on which to filter.
-- **descriptionCodes –** {List\&lt;String\&gt;, optional} List of route description codes on which to filter.
-- **directionalCodes –** {List\&lt;String\&gt;, optional} List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
-- **muniFipsCodes –** {List\&lt;String\&gt;, optional} List of municipal FIPS codes on which to filter.
-- **townshipFipsCodes –** {List\&lt;String\&gt;, optional} List of township FIPS codes on which to filter.
-- **streetNames –** {List\&lt;String\&gt;, optional} List of street names on which to filter.
+- **attributes** – {List<String&#62;, optional} – This is an alternative to the allAttributes option, where the caller may specify which attributes are to be included in the result. Reducing the number of attributes usually reduces the number of segments that will be returned and lightens the response payload.
+- **jurisdictions** {List<String&#62;, optional} – List of route jurisdiction codes on which to filter.
+- **counties –** {List\&lt;String&#62;, optional} – List of county codes on which to filter.
+- **routeCodes –** {List\&lt;String&#62;, optional} List of route trans route codes on which to filter.
+- **routeNbrs –** {List\&lt;String&#62;, optional} List of route numbers on which to filter.
+- **extensionCodes –** {List\&lt;String&#62;, optional} List of route extension codes on which to filter.
+- **descriptionCodes –** {List\&lt;String&#62;, optional} List of route description codes on which to filter.
+- **directionalCodes –** {List\&lt;String&#62;, optional} List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
+- **muniFipsCodes –** {List\&lt;String&#62;, optional} List of municipal FIPS codes on which to filter.
+- **townshipFipsCodes –** {List\&lt;String&#62;, optional} List of township FIPS codes on which to filter.
+- **streetNames –** {List\&lt;String&#62;, optional} List of street names on which to filter.
 
 #### Response
 
@@ -814,6 +814,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDcwNjc0MiwtNTU3NTkwMTA1LDU3Mz
-kwNDQ2N119
+eyJoaXN0b3J5IjpbLTE5MzkzNDg3NjgsLTU1NzU5MDEwNSw1Nz
+M5MDQ0NjddfQ==
 -->
