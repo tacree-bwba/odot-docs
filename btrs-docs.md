@@ -20,14 +20,16 @@
 <li>Centerline Routes</li>
 </ul>
 </li>
-<li><a href="#perp-year-api">Perp Year API</a><br>
-4.1 Perp Year Object<br>
+<li><a href="#perp-year-api">Perp Year API</a>
+<ul>
+<li>Perp Year Object<br>
 4.2 Get Current Perp Year<br>
 4.3 Get Current Perp Year by Year<br>
 4.4 Get Perp Year Bounds</li>
-</ol>
-<h4 id="routes-api">Routes API</h4>
-<p>5.1 Get Jurisdiction Codes<br>
+</ul>
+</li>
+<li>Routes API<br>
+5.1 Get Jurisdiction Codes<br>
 5.2 Get Trans Route Codes<br>
 5.3 Get Local Suffix Codes<br>
 5.4 Get State Suffix Codes<br>
@@ -36,16 +38,17 @@
 5.7 Route Bounds Search<br>
 5.8 Route Search<br>
 5.9 Route Roadway Inventory Events<br>
-5.10 Get Routes RI Attributes</p>
+5.10 Get Routes RI Attributes</li>
+</ol>
 <h4 id="streets-api">Streets API</h4>
 <p>6.1 Street Name Attributes<br>
 6.2 Street Event Search<br>
 6.3 Street Name Search</p>
 <h4 id="boundary-api">Boundary API</h4>
 <p>7.1 EndPoints</p>
-<h1 id="about-this-document">About This Document</h1>
+<h2 id="about-this-document">About This Document</h2>
 <p>The purpose of this document is to provide a quick overview of the REST services provided by the BTRS Services API.  One should note that all services are still being developed at this stage and so urls and request parameters are still in flux.  The desire is to give developers wishing to use the API something so that they can begin to test and develop with them.</p>
-<h2 id="audience">Audience</h2>
+<h3 id="audience">Audience</h3>
 <p>This document is intended for developers wishing to begin testing the BTRS Microservices API.</p>
 <h2 id="environments">Environments</h2>
 <p>Currently there is only one environment and it is considered temporary until the Docker environment is established.  For the services, the following base URL shall be used:</p>
