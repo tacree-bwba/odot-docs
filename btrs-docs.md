@@ -19,12 +19,12 @@
 	* [Get Trans Route Codes](#get-trans-route-codes)
 	* [Get Local Suffix Codes](#get-local-suffix-codes)
 	* [Get State Suffix Codes](#get-state-suffix-codes)
-	* [Get Direction Codes]
-	* [County Route Search]
-	* [Route Bounds Search]
-	* [Route Search]
-	* [Route Roadway Inventory Events]
-	* [Get Routes RI Attributes]
+	* [Get Direction Codes](#get-direction-codes)
+	* [County Route Search](#county-route-search)
+	* [Route Bounds Search](#route-bounds=search)
+	* [Route Search](#route-search)
+	* [Route Roadway Inventory Events](#route-roadway-inventory-events)
+	* [Get Routes RI Attributes](#get-routes-RI-attributes)
 ####  Streets API
 6.1 Street Name Attributes
 6.2 Street Event Search
@@ -490,6 +490,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg4NDk3MjUsNTE4NjM5NzM2LC03NT
-IyMTM2NzUsLTYxNjI4MTY5M119
+eyJoaXN0b3J5IjpbOTg1NTAyODMyLDUxODYzOTczNiwtNzUyMj
+EzNjc1LC02MTYyODE2OTNdfQ==
 -->
