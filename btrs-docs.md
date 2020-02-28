@@ -162,15 +162,42 @@ The routes API provides information about finding and searching routes as well a
 
 ### Get Jurisdiction Codes
 
-Retrieves the available Jurisdiction Codes component of the NlfId.  This is the first character of the NlfId
+Retrieves the available Jurisdiction Codes component of the NlfId.  This is the first character of the NlfId.
 
 **End Point:** GET /routes/jurisdictions
 
 #### Response
+```json
+{
+    "total": 6,
+    "fieldErrors": {},
+    "success": true,
+    "errorMessages": [],
+    "items": [
+        {
+            "id": "S",
+            "code": "S",
+            "active": true,
+            "shortName": "S",
+            "sequence": 83,
+            "longName": "State"
+        },
+        {
+            "id": "C",
+            "code": "C",
+            "active": true,
+            "shortName": "C",
+            "sequence": 67,
+            "longName": "County"
+        },
+. . . 
+     ]
+}
 
+```
 ### Get Trans Route Codes
 
-Retrieves the available Trans Route Codes component of the NlfId. This starts at the 5
+Retrieves the available Trans Route Codes component of the NlfId. This starts at the 5th 
 
 # th
  position of the NlfId and is 2 characters long.
@@ -481,5 +508,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDE0NzYwOSw1MDA4NzczNzJdfQ==
+eyJoaXN0b3J5IjpbMTkzNzkxMjEyMCw1MDA4NzczNzJdfQ==
 -->
