@@ -50,11 +50,11 @@ All endpoints provided hereafter shall be assumed that the base URL is prepended
 
 The API is currently divided up into a couple different base endpoints which are covered in the subsequent sections:
 
-- Routes – Finding information about a route.
-- Route Events – Reading information about point and linear events.
-- Streets – API for retrieving information about street events including their relationships to municipalities and townships.
-- Boundary – areas that represent a boundary attribute such as municipalities, counties, townships and districts.
-- Conflation – transforming events from one perp year to another
+- *Routes* – Finding information about a route.
+- *Route Events* – Reading information about point and linear events.
+- *Streets* – API for retrieving information about street events including their relationships to municipalities and townships.
+- *Boundary* – areas that represent a boundary attribute such as municipalities, counties, townships and districts.
+- *Conflation* – transforming events from one perp year to another
 
 ### LRS and LRM
 
@@ -534,5 +534,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjI4MTY5M119
+eyJoaXN0b3J5IjpbLTc1MjIxMzY3NSwtNjE2MjgxNjkzXX0=
 -->
