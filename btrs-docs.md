@@ -562,11 +562,11 @@ This end point retrieves route linear and point events based on the configuratio
 
 The response object minimally includes a list of objects that can contain only a routeId unless includeBoundaries is set to true.  In this case, it will include either state, county or both LRMs depending on the stateLrm/countyLrm request settings.
 
-**Response Object*
+***Response Object***
 
 The response object is a json map object where the key is the original id of the requested data, and the value is an array of the linear events that satisfy the request from the posted data.
 
-**Event Object Common Fields**
+&#32;&#32;&#32;*Event Object Common Fields*
 
 - Id – a unique id assigned to this event
 - perpYear – The perpYear to which the data matches
@@ -683,7 +683,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDI0OTg4NDUsODQzMzc4OTE3LC00OT
+eyJoaXN0b3J5IjpbLTEwMTEzMjA1MjQsODQzMzc4OTE3LC00OT
 IxOTIxMjQsLTExMjczNjE3NjYsLTIwNDk4ODYyODcsLTY1Mjc4
 MzM0NCwxODY0MTYzNjM5XX0=
 -->
