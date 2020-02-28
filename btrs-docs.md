@@ -377,27 +377,24 @@ This end point retrieves route measure bounds information based on a provided ro
 
 #### Path Variables
 
-- **routeId –** {String, required} This identifies a routeId from which to request boundary details.  LrmTypes of both CTL\_3DECIMAL and STL\_3DECIMAL are supported.
+- **routeId –** {String, required} – This identifies a routeId from which to request boundary details.  LrmTypes of both CTL\_3DECIMAL and STL\_3DECIMAL are supported.
 
 #### Request Parameters
 
-- **year –** {Integer, optional} The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
-- **lrmType–** {String, optional} This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
+- **year** – {Integer, optional} – The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
+- **lrmType** – {String, optional} – This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
 
 #### Response
 
 The response returns the routeId for the LrmType.  The nlfIdSt is always included in the response.  If the lrmType is STL\_3DECIMAL, then the nlfId is NOT included.  If the lrmType is CTL\_3DECIMAL, then the nlfId is included along with the corresponding measures for the county LRM.
 
-1.
-  1.
-    1.
-      1. 5.7.3.1
+5.7.3.1
 
-- nlfId – The routeId for the county LRM
-- nlfIdSt – The routeId for the state LRM
-- ctlBeginNbr – The county LRM begin boundary
+- nlfId – The routeId for the county LRM.
+- nlfIdSt – The routeId for the state LRM.
+- ctlBeginNbr – The county LRM begin boundary.
 - ctlEndNbr – The county LRM end boundary
-- stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures
+- stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 - stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures
 -
 
@@ -618,5 +615,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDE2MzYzOV19
+eyJoaXN0b3J5IjpbLTY1Mjc4MzM0NCwxODY0MTYzNjM5XX0=
 -->
