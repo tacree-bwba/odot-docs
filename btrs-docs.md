@@ -98,7 +98,7 @@ The county traversal LRM represents routes as they traverse through a county.  R
 
 ### Centerline Routes
 
-The API is currently making a distinction between &quot;centerline&quot; routes and non-centerline.  Centerline routes only include cardinal directed routes, and the last character of the routeId shall be a &#39;C&#39; character.
+The API is currently making a distinction between "centerline" routes and non-centerline.  Centerline routes only include cardinal directed routes, and the last character of the routeId shall be a &#39;C&#39; character.
 
 This character is called the Bi-Directional Code, and can carry the following values:
 
@@ -476,7 +476,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTU5MDg1OSwtMTQ2OTUwOTE1MiwxNz
+eyJoaXN0b3J5IjpbMTk1MDUyMDQyNSwtMTQ2OTUwOTE1MiwxNz
 UzNzMzNjgzLDUxODYzOTczNiwtNzUyMjEzNjc1LC02MTYyODE2
 OTNdfQ==
 -->
