@@ -239,6 +239,34 @@ Retrieves the available Local Suffix Codes component of the NlfId.  This is the 
 **End Point:** GET /routes/local\_suffix
 
 #### Response
+```json
+{
+    "total": 15,
+    "fieldErrors": {},
+    "success": true,
+    "errorMessages": [],
+    "items": [
+        {
+            "id": "*",
+            "active": true,
+            "code": "*",
+            "longName": "Regular Route",
+            "shortName": "*",
+            "sequence": 42
+        },
+        {
+            "id": "A",
+            "active": true,
+            "code": "A",
+            "longName": "Alternate Route",
+            "shortName": "A",
+            "sequence": 65
+        }
+. . . 
+     ]
+}
+
+```
 
 ### Get State Suffix Codes
 
@@ -247,12 +275,38 @@ Retrieves the available State Suffix Codes component of the NlfId.  This is the 
 **End Point:** GET /routes/state\_suffix
 
 #### Response
+```json
+{
+    "total": 15,
+    "fieldErrors": {},
+    "success": true,
+    "errorMessages": [],
+    "items": [
+        {
+            "id": "*",
+            "shortName": "*",
+            "code": "*",
+            "active": true,
+            "longName": "Regular Route",
+            "sequence": 42
+        },
+        {
+            "id": "A",
+            "shortName": "A",
+            "code": "A",
+            "active": true,
+            "longName": "Alternate Route",
+            "sequence": 65
+        },
+. . . 
+     ]
+}
+
+```
 
 ### Get Direction Codes
 
-Retrieves the available Direction Codes component of the NlfId.  This is the 14
-<sup>th</sup> th
- character of the NlfId. Note that this service is provided for completeness, though currently it only carries two values: [&#39;N&#39;, &#39;C&#39;].  For purposes of BTRS, only &#39;C&#39; is used as the &#39;N&#39; designation indicates a non-cardinal route which is not yet ready for public consumption.
+Retrieves the available Direction Codes component of the NlfId.  This is the 14<sup>th</sup> character of the NlfId. Note that this service is provided for completeness, though currently it only carries two values: ['N&#39;, &#39;C&#39;].  For purposes of BTRS, only &#39;C&#39; is used as the &#39;N&#39; designation indicates a non-cardinal route which is not yet ready for public consumption.
 
 **End Point:** GET /routes/direction\_codes
 
@@ -527,6 +581,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzU3NTgzOTksMTg0NzU0NTUxNSw1MD
-A4NzczNzJdfQ==
+eyJoaXN0b3J5IjpbLTExMjIyODQ5MzAsLTE1NzU3NTgzOTksMT
+g0NzU0NTUxNSw1MDA4NzczNzJdfQ==
 -->
