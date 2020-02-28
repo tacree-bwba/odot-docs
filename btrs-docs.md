@@ -11,9 +11,9 @@
 	* [Centerline Routes](#centerline-routes)
 4. [Perp Year API](#perp-year-api)
 	* [Perp Year Object](#perp-year-object)
-	* [Get Current Perp Year](#get-current-perp-yar)
-	* [Get Current Perp Year by Year
-	* [Get Perp Year Bounds
+	* [Get Current Perp Year](#get-current-perp-year)
+	* [Get Current Perp Year by Year](#get-current-perp-year-by-year) 
+	* [Get Perp Year Bounds](#get-perp-year-bounds)
 5.  Routes API
 5.1 Get Jurisdiction Codes
 5.2 Get Trans Route Codes
@@ -127,36 +127,29 @@ The perp year API provides details related to getting, validating and identifyin
 - beginDt – The date this perp year started
 - endDt – The end date of this perp year.  If the value is null, that implies this is the current perp year.
 
-1.
-  1. 4.2Get Current Perp Year
+### Get Current Perp Year
 
 Retrieves the current perp year.
 
 **End Point:** GET /perpyear
 
-1.
-  1. 4.3Get Current Perp Year by Year
+### Get Current Perp Year by Year
 
 Retrieves the current perp year.
 
 **End Point:** GET /perpyear/:year
 
-1.
-  1.
-    1. 4.3.1Parameters
+#### Parameters
 
 - year – The desired year to be retrieved
 
-1.
-  1. 4.4Get Perp Year Bounds
+### Get Perp Year Bounds
 
 Retrieves the range of available perp years.  The result is an array with the min and max perp year supported.  Note that prior to 2008, only state system routes are supported.
 
 **End Point:** GET /perpyear/bounds
 
-1.
-  1.
-    1. 4.4.1Response
+#### Response
 
 1. 5Routes API
 
@@ -541,5 +534,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjI2MjI2NywtMTExNzIzODkyMF19
+eyJoaXN0b3J5IjpbLTYxNjI4MTY5MywtMTExNzIzODkyMF19
 -->
