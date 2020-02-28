@@ -8,11 +8,11 @@
 <ol>
 <li><a href="#about-this-document">About This Document</a>
 <ul>
-<li>Audience</li>
+<li><a href="#audience">Audience</a></li>
 </ul>
 </li>
-<li>Environments</li>
-<li>API Overview
+<li><a href="#environments">Environments</a></li>
+<li><a href="#api-overview">API Overview</a>
 <ul>
 <li>LRS and LRM</li>
 <li>Temporality</li>
@@ -20,7 +20,7 @@
 <li>Centerline Routes</li>
 </ul>
 </li>
-<li>Perp Year API<br>
+<li><a href="#perp-year-api">Perp Year API</a><br>
 4.1 Perp Year Object<br>
 4.2 Get Current Perp Year<br>
 4.3 Get Current Perp Year by Year<br>
@@ -51,9 +51,7 @@
 <p>Currently there is only one environment and it is considered temporary until the Docker environment is established.  For the services, the following base URL shall be used:</p>
 <p><strong><a href="http://dotibtrsd01:8080">http://dotibtrsd01:8080</a></strong></p>
 <p>All endpoints provided hereafter shall be assumed that the base URL is prepended to it.  In the future, a DNS entry shall be made to direct traffic via a well known domain name to whatever server matches the environment, so that the server can be swapped without affecting calling environments.</p>
-<ol>
-<li>3API Overview</li>
-</ol>
+<h2 id="api-overview">API Overview</h2>
 <p>The API is currently divided up into a couple different base endpoints which are covered in the subsequent sections:</p>
 <ul>
 <li>Routes – Finding information about a route.</li>
@@ -123,21 +121,16 @@
 <p>For purposes of most applications, the non-cardinal routes should be excluded from storing events as these routes don't carry attribution in the roadway inventory system.  Additionally, the measure strategy for these routes is subject to change while this portion of the system is still being defined and developed.</p>
 <p>Where applicable in route searches, a <strong>centerline</strong> request attribute is defined, and when not provided, is defaulted to true to indicate that the non-cardinal routes are to be excluded.</p>
 <p><strong>WARNING – Use non-cardinal routes at your own risk when storing data.  Minimal support shall be provided at this point and time, and may involve extensive correction of your data at some point and time.</strong></p>
-<ol>
-<li>4Perp Year API</li>
-</ol>
+<h2 id="perp-year-api">Perp Year API</h2>
 <p>The perp year API provides details related to getting, validating and identifying a perp year.  The perp year is what relates a version of the roadway inventory to various event data collections.</p>
-<ol>
-<li></li>
-<li>
-<p>4.1Perp Year Object</p>
-</li>
-<li></li>
-<li></li>
-<li>
-<p>4.1.1Attributes</p>
-</li>
-</ol>
+<h3 id="perp-year-object">Perp Year Object</h3>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+    <span class="token string">"year"</span><span class="token punctuation">:</span> <span class="token number">2017</span><span class="token punctuation">,</span>
+    <span class="token string">"beginDt"</span><span class="token punctuation">:</span> <span class="token string">"2017-01-01T00:00:00.000-0500"</span><span class="token punctuation">,</span>
+    <span class="token string">"endDt"</span><span class="token punctuation">:</span> <span class="token string">"2017-12-31T00:00:00.000-0500"</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="attributes">Attributes</h4>
 <ul>
 <li>year – The perp Year being idenfied</li>
 <li>beginDt – The date this perp year started</li>
