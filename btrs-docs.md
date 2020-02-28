@@ -172,12 +172,9 @@ Retrieves the available Trans Route Codes component of the NlfId. This starts at
 
 **End Point:** GET /routes/route\_codes
 
-1.
-  1.
-    1. 5.2.1Response
+#### Response
 
-1.
-  1. 5.3Get Local Suffix Codes
+### Get Local Suffix Codes
 
 Retrieves the available Local Suffix Codes component of the NlfId.  This is the 12
 
@@ -186,12 +183,9 @@ Retrieves the available Local Suffix Codes component of the NlfId.  This is the 
 
 **End Point:** GET /routes/local\_suffix
 
-1.
-  1.
-    1. 5.3.1Response
+#### Response
 
-1.
-  1. 5.4Get State Suffix Codes
+### Get State Suffix Codes
 
 Retrieves the available State Suffix Codes component of the NlfId.  This is the 13
 
@@ -200,12 +194,9 @@ Retrieves the available State Suffix Codes component of the NlfId.  This is the 
 
 **End Point:** GET /routes/state\_suffix
 
-1.
-  1.
-    1. 5.4.1Response
+#### Response
 
-1.
-  1. 5.5Get Direction Codes
+### Get Direction Codes
 
 Retrieves the available Direction Codes component of the NlfId.  This is the 14
 
@@ -214,20 +205,15 @@ Retrieves the available Direction Codes component of the NlfId.  This is the 14
 
 **End Point:** GET /routes/direction\_codes
 
-1.
-  1.
-    1. 5.5.1Response
+#### Response
 
-1.
-  1. 5.6County Route Search
+### County Route Search
 
 This end point is provided to perform fast lookups of a NlfId (county route) based on search criteria being entered for example by a user in an autocomplete component.  The goal is for this end point to return results quickly so that the user doesn&#39;t experience a relevant delay in the response while typing.
 
 **End Point:** GET /routes/county\_route\_search
 
-1.
-  1.
-    1. 5.6.1Request Parameters
+#### Request Parameters
 
 - **route\_criteria** – {String, required} This field must contain a minimum of 3 characters; otherwise, an empty result is returned.  The value is case-insensitive and shall be parsed based on varying assumptions to best determine the user&#39;s intention for which nlfId(s) they are searching.  The goal is to provide the option for shorthanding route names.  For example, FRAIR70 is treated as shorthand for obtaining a result of &#39;SFRAIR00070\*\*C&#39;.
 - **year –** {Integer, optional} The perp year on which to search for the routes.  This field is optional, and if not provided, shall use the current active perp year.
@@ -530,6 +516,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjQzNTc5NzEsLTc1MjIxMzY3NSwtNj
+eyJoaXN0b3J5IjpbLTIxMDU2MDEzMTIsLTc1MjIxMzY3NSwtNj
 E2MjgxNjkzXX0=
 -->
