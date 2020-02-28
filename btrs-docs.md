@@ -415,9 +415,13 @@ In this example, the state measure 86.043 corresponds to the county measure 0.00
 **Example Request:** Get a state route boundary
 
 GET /routes/bounds/SIR00070\*\*CPRE?year=2018&amp;lrmType=STL\_3DECIMAL
-
-
-
+```json
+{
+    "nlfIdSt": "SIR00070**CPRE",
+    "stlBeginNbr": 0.000,
+    "stlEndNbr": 225.587
+}
+```
 Note that in this example, only attributes related to the state measures are provided, and the full boundaries of the route are provided
 
 ### Route Search
@@ -428,10 +432,7 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 
 #### Request Body
 
-1.
-  1.
-    1.
-      1. 5.8.1.1Attribute Description
+Attribute Description
 
 - **perpYear–** {Integer, optional} The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
 - **includeBoundaries –** {Boolean, optional, default: true} this indicates that route boundaries for the selected LRMs should be included in the result
@@ -625,6 +626,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDMzMzc1NCwtNjUyNzgzMzQ0LDE4Nj
-QxNjM2MzldfQ==
+eyJoaXN0b3J5IjpbLTEyMjM1MTQzMTcsLTY1Mjc4MzM0NCwxOD
+Y0MTYzNjM5XX0=
 -->
