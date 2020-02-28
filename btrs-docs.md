@@ -671,7 +671,6 @@ POST /routes/ri/events
         }
     ]
 }
-
 ```
 ### Get Routes RI Attributes
 
@@ -680,7 +679,27 @@ Retrieves the available attributes/metadata for the Roadway Inventory (RI) datas
 **End Point:** GET /routes/ri/attributes
 
 #### Response
-
+```json
+{
+    "attributes": [
+        "accessControl",
+        "laneWidth",
+        "lanes",
+        "leftBaseTypeCd",
+        "leftCounty",
+        "leftInShoulderWidth",
+        "leftMuniName",
+        "leftTownshipName",
+        "medianType",
+        "medianWidth",
+        "mileageClass",
+        "nhsCd",
+        "roadwayClass",
+        "roadwayWidth",
+      ...
+    ]
+}
+```
 ## Streets API
 
 The streets API provides information specifically relating street names to routes.  This linear event dataset does not fully cover all routes in the roadway inventory, but only the ones that actually have a street name.
@@ -694,7 +713,34 @@ Retrieves the available attributes/metadata for the Street Event dataset.  The a
 **End Point:** GET /streets/attributes
 
 #### Response
-
+```json
+{
+    "attributes": [
+        "countyCode",
+        "ctl3dBeginNbr",
+        "ctl3dEndNbr",
+        "id",
+        "leave",
+        "leaveReenterTypeCode",
+        "muniFipsCode",
+        "muniName",
+        "nlfId",
+        "nlfIdSt",
+        "perpYear",
+        "primary",
+        "reenter",
+        "segmentLength3D",
+        "stl3dBeginNbr",
+        "stl3dEndNbr",
+        "streetDirectionPrefix",
+        "streetDirectionSuffix",
+        "streetName",
+        "streetSuffix",
+        "townshipFipsCode",
+        "townshipName"
+    ]
+}
+```
 ### Street Event Search
 
 This end point retrieves street name events based on the posted search criteria
@@ -702,13 +748,21 @@ This end point retrieves street name events based on the posted search criteria
 **End Point:** POST /streets/search
 
 #### Request Body
+```json
+{
+    "perpYear": 2018,
+    "lrmType": "CTL_3DECIMAL",
+    "attributes": [ "countyCode",  "muniName", "muniFipsCode", "streetName"],
 
-1.
-  1.
-    1.
-      1. 6.2.1.1Attribute Description
+    "routeCodes" : ["US"],
+    "routeNbrs": ["23"],
+    "streetNames": ["INDIANOLA", "HIGH"],
+    "muniFipsCodes": ["18000"]
+   } 
+```
+***Attribute Description***
 
-- **perpYear–** {Integer, optional} The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
+- **perpYear** – {Integer, optional} The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
 - **lrmType–** {String, optional} This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
 - **allAttributes –** {Boolean, optional, default: false} this indicates that all available attributes related to an event from the Street Names should be included in the response.
 - **attributes –** {List\&lt;String\&gt;, optional} This is an alternative to the allAttributes option, where the caller may specify which attributes are to be included in the result. Reducing the number of attributes usually reduces the number of segments that will be returned and lightens the response payload.
@@ -760,5 +814,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzU5MDEwNSw1NzM5MDQ0NjddfQ==
+eyJoaXN0b3J5IjpbLTE1NTk1MDQyNTUsLTU1NzU5MDEwNSw1Nz
+M5MDQ0NjddfQ==
 -->
