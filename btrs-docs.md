@@ -339,9 +339,36 @@ This end point is provided to perform fast lookups of a NlfId (county route) bas
 
 GET /routes/county\_route\_search?route\_criteria=fra70&amp;max\_results=100
 ```json
+{
+    "total": 31,
+    "fieldErrors": {},
+    "success": true,
+    "items": [
+        "CFRACR00070**C",
+        "CFRACR00700**C",
+        "CFRACR00701**C",
+        "CFRACR00702**C",
+        "CFRACR00703**C",
+        "CFRACR00704**C",
+        "CFRACR00705**C",
+        ...
+        "CFRACR07008**C",
+        "MFRAMR00070**C",
+        "MFRAMR00700**C",
+        "MFRAMR00701**C",
+        "MFRAMR00702**C",
+        "MFRAMR00703**C",
+        "MFRAMR00705**C",
+        "MFRAMR00706**C",
+        "MFRAMR00707**C",
+        "MFRAMR00708**C",
+        "MFRAMR00709**C",
+        "MFRAMR00709A*C",
+        "SFRAIR00070**C"
+    ],
+    "errorMessages": []
+}
 ```
-
-
 ### Route Bounds Search
 
 This end point retrieves route measure bounds information based on a provided route id.  The request supports both the County Route and State Route Lrm Types.
@@ -591,5 +618,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTQ3NTMzLDEzMDU2OTkzMzBdfQ==
+eyJoaXN0b3J5IjpbMTg2NDE2MzYzOV19
 -->
