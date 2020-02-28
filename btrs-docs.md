@@ -193,7 +193,6 @@ Retrieves the available Jurisdiction Codes component of the NlfId.  This is the 
 . . . 
      ]
 }
-
 ```
 ### Get Trans Route Codes
 
@@ -229,7 +228,6 @@ Retrieves the available Trans Route Codes component of the NlfId. This starts at
 . . . 
      ]
 }
-
 ```
 
 ### Get Local Suffix Codes
@@ -265,7 +263,6 @@ Retrieves the available Local Suffix Codes component of the NlfId.  This is the 
 . . . 
      ]
 }
-
 ```
 
 ### Get State Suffix Codes
@@ -301,7 +298,6 @@ Retrieves the available State Suffix Codes component of the NlfId.  This is the 
 . . . 
      ]
 }
-
 ```
 
 ### Get Direction Codes
@@ -311,6 +307,17 @@ Retrieves the available Direction Codes component of the NlfId.  This is the 14<
 **End Point:** GET /routes/direction\_codes
 
 #### Response
+```json
+{
+    "total": 1,
+    "items": [
+        "C"
+    ],
+    "success": true,
+    "errorMessages": [],
+    "fieldErrors": {}
+}
+```
 
 ### County Route Search
 
@@ -581,6 +588,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc1Nzk4MjUsLTE1NzU3NTgzOTksMT
+eyJoaXN0b3J5IjpbLTE1OTQ1Mjk0NTUsLTE1NzU3NTgzOTksMT
 g0NzU0NTUxNSw1MDA4NzczNzJdfQ==
 -->
