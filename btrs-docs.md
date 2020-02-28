@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="btrs-microservices-version-1.00">BTRS Microservices Version 1.00</h1>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -573,5 +568,5 @@
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5Nzk3NzMyXX0=
+eyJoaXN0b3J5IjpbMTY0MDkxMjUzNF19
 -->
