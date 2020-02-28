@@ -88,13 +88,13 @@ The county traversal LRM represents routes as they traverse through a county.  R
 - **measure** – The measure value for a point event.  This can be either state or county depending on the lrmType.
 - **leaveInd** – Identifies that a geometric discontinuity is associated with the endMeasure.  The type of discontinuity is identified by the **leaveReenterTypeCd.  ** This field has a Boolean type.
 - **reenterInd** – Identifies that a geometric discontinuity is associated with the beginMeasure.  The type of discontinuity is identified by the **leaveReenterTypeCd**. This field has a Boolean type.
-- **leaveReenterTypeCd –** Identifies the type of leave/reenter when applicable.  Possible values include the following:
-  - COUNTY\_LINE – Route is leaving or reentering a county.  In the case of a leave, this is only set if the route is going to eventually reenter the county.
-  - PHYSICAL\_GAP – Identifies a physical discontinuity of the route.
-  - LOCAL\_ROUTE – Identifies specifically a local road where the route generally is transferred to a different route, then continues on to eventually transfer back to the original.
-  - ALPHA\_ROUTE – False discontinuities that are placed in the data due to ESRI limitations related to the geometry definition of a route.
-  - JOURNAL\_GAP – False discontinuities that occur when the digitizing of the road jumps from the cardinal side of the road to the non-cardinal.  This is done to appease cases where a route has a cardinal overlap on the non-cardinal side of a route.
-  - OTHER – Unreconciled discontinuities.
+- **leaveReenterTypeCd** – Identifies the type of leave/reenter when applicable.  Possible values include the following:
+  * COUNTY\_LINE – Route is leaving or reentering a county.  In the case of a leave, this is only set if the route is going to eventually reenter the county.
+  * PHYSICAL\_GAP – Identifies a physical discontinuity of the route.
+  * LOCAL\_ROUTE – Identifies specifically a local road where the route generally is transferred to a different route, then continues on to eventually transfer back to the original.
+  * ALPHA\_ROUTE – False discontinuities that are placed in the data due to ESRI limitations related to the geometry definition of a route.
+  * JOURNAL\_GAP – False discontinuities that occur when the digitizing of the road jumps from the cardinal side of the road to the non-cardinal.  This is done to appease cases where a route has a cardinal overlap on the non-cardinal side of a route.
+  * OTHER – Unreconciled discontinuities.
 
 ### Centerline Routes
 
@@ -476,7 +476,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODAzMjAzMywtMTQ2OTUwOTE1MiwxNz
+eyJoaXN0b3J5IjpbLTg3MTU5MDg1OSwtMTQ2OTUwOTE1MiwxNz
 UzNzMzNjgzLDUxODYzOTczNiwtNzUyMjEzNjc1LC02MTYyODE2
 OTNdfQ==
 -->
