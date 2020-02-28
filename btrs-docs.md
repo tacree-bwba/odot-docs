@@ -572,3 +572,6 @@
 <li>GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.</li>
 </ul>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTg5Nzk3NzMyXX0=
+-->
