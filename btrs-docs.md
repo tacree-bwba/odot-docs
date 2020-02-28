@@ -10,7 +10,7 @@
 	* LRM Type
 	* Centerline Routes
 4. [Perp Year API](#perp-year-api)
-	* Perp Year Object
+	* [Perp Year Object](#perp-year-object)
 4.2 Get Current Perp Year
 4.3 Get Current Perp Year by Year
 4.4 Get Perp Year Bounds
