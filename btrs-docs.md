@@ -98,11 +98,11 @@ The county traversal LRM represents routes as they traverse through a county.  R
 
 ### Centerline Routes
 
-The API is currently making a distinction between "centerline" routes and non-centerline.  Centerline routes only include cardinal directed routes, and the last character of the routeId shall be a &#39;C&#39; character.
+The API is currently making a distinction between "centerline" routes and non-centerline.  Centerline routes only include cardinal directed routes, and the last character of the routeId shall be a 'C' character.
 
 This character is called the Bi-Directional Code, and can carry the following values:
 
-- C – Cardinal, indicating that measures are in the digitized direction.
+- C – Cardinal indicating that measures are in the digitized direction.
 - N – Non-Cardinal – indicating the opposite side of a route where the road is divided.  Its measures flow in the same direction as the cardinal side even though the flow of the road is in the opposite direction.
 
 For purposes of most applications, the non-cardinal routes should be excluded from storing events as these routes don&#39;t carry attribution in the roadway inventory system.  Additionally, the measure strategy for these routes is subject to change while this portion of the system is still being defined and developed.
@@ -476,7 +476,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDUyMDQyNSwtMTQ2OTUwOTE1MiwxNz
-UzNzMzNjgzLDUxODYzOTczNiwtNzUyMjEzNjc1LC02MTYyODE2
-OTNdfQ==
+eyJoaXN0b3J5IjpbLTEzOTk3NjcyMzMsLTE0Njk1MDkxNTIsMT
+c1MzczMzY4Myw1MTg2Mzk3MzYsLTc1MjIxMzY3NSwtNjE2Mjgx
+NjkzXX0=
 -->
