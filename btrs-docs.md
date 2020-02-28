@@ -335,7 +335,7 @@ This end point is provided to perform fast lookups of a NlfId (county route) bas
 
 #### Response
 
-&#160;&#160;&#160;&#160;&#160;**Example Request:**
+**Example Request:**
 
 GET /routes/county\_route\_search?route\_criteria=fra70&amp;max\_results=100
 ```json
@@ -397,7 +397,7 @@ The response returns the routeId for the LrmType.  The nlfIdSt is always include
 - stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 - stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 
-&#160;&#160;&#160;&#160;&#160;**Example Request:** Get a county route boundary
+**Example Request:** Get a county route boundary
 GET /routes/bounds/SFRAIR00070\*\*C?year=2018&amp;lrmType=CTL\_3DECIMAL
 
 ```json
@@ -412,7 +412,7 @@ GET /routes/bounds/SFRAIR00070\*\*C?year=2018&amp;lrmType=CTL\_3DECIMAL
 ```
 In this example, the state measure 86.043 corresponds to the county measure 0.000.  They likewise match for the end measures.
 
-&#160;&#160;&#160;&#160;&#160;**Example Request:** Get a state route boundary
+**Example Request:** Get a state route boundary
 
 GET /routes/bounds/SIR00070\*\*CPRE?year=2018&amp;lrmType=STL\_3DECIMAL
 ```json
@@ -477,7 +477,7 @@ The response object minimally includes a list of objects that can contain only a
 
 POST /routes/ri/events
 
-&#160;&#160;&#160;&#160;&#160;**Request Body**
+**Request Body**
 ```json
 {
     "perpYear": 2018,
@@ -493,7 +493,7 @@ POST /routes/ri/events
     "directionalCodes": ["N", "C"]
 }
 ```
-&#160;&#160;&#160;&#160;&#160;**Response**
+**Response**
 ```json
 {
     "total": 2,
@@ -584,7 +584,7 @@ The response object is a json map object where the key is the original id of the
 - stl3dBeginNbr – The state LRM begin boundary. This is included when the county LRM is requested for reference.
 - stl3dEndNbr – The state LRM end boundary. This is included when the county LRM is requested for reference.
 
-&#160;&#160;&#160;&#160;&#160;*Event Object Optional Attributes*
+*Event Object Optional Attributes*
 
 In addition to the common fields, the requester can pick and choose other supported fields within the roadway inventory data.  To view the complete list of available fields, see the **Routes RI Attributes** end point.
 
@@ -592,7 +592,7 @@ In addition to the common fields, the requester can pick and choose other suppor
 
 POST /routes/ri/events
 
-&#160;&#160;&#160;&#160;&#160;**Request Body**
+**Request Body**
 ```json
 {
   "lrmType": "CTL_3DECIMAL",
@@ -616,7 +616,7 @@ POST /routes/ri/events
   ]
 }
 ```
-&#160;&#160;&#160;&#160;&#160;**Response**
+**Response**
 ```json
 {
     "0": [
@@ -876,5 +876,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - *GET /boundaries/townships }* – Retrieve all township records for the current perp year.
 - *GET /boundaries/townships?county={countyCode}* – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODgzMDE5NzZdfQ==
+eyJoaXN0b3J5IjpbLTExMzE1OTI3MjgsLTE1ODgzMDE5NzZdfQ
+==
 -->
