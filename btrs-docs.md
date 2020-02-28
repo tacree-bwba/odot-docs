@@ -25,12 +25,12 @@
 	* [Route Search](#route-search)
 	* [Route Roadway Inventory Events](#route-roadway-inventory-events)
 	* [Get Routes RI Attributes](#get-routes-ri-attributes)
-6. Streets API
-Street Name Attributes
-6.2 Street Event Search
-6.3 Street Name Search
-####  Boundary API
-7.1 EndPoints
+6. [Streets API](#streets-api)
+	* [Street Name Attributes](#street-name-attributes)
+	* [Street Event Search](#street-event-search)
+	* [Street Name Search](#street-name-sear
+7. [Boundary API]
+	* [EndPoints]
 
 ## About This Document
 
@@ -490,6 +490,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTAxMTMxOSw1MTg2Mzk3MzYsLTc1Mj
-IxMzY3NSwtNjE2MjgxNjkzXX0=
+eyJoaXN0b3J5IjpbODYzODYzMjEwLDUxODYzOTczNiwtNzUyMj
+EzNjc1LC02MTYyODE2OTNdfQ==
 -->
