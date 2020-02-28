@@ -14,7 +14,7 @@
 	* [Get Current Perp Year](#get-current-perp-year)
 	* [Get Current Perp Year by Year](#get-current-perp-year-by-year) 
 	* [Get Perp Year Bounds](#get-perp-year-bounds)
-5.  Routes API
+5.  [Routes API](#routes-api)
 5.1 Get Jurisdiction Codes
 5.2 Get Trans Route Codes
 5.3 Get Local Suffix Codes
@@ -151,23 +151,19 @@ Retrieves the range of available perp years.  The result is an array with the mi
 
 #### Response
 
-1. 5Routes API
+## Routes API
 
 The routes API provides information about finding and searching routes as well as event information about routes.
 
-1.
-  1. 5.1Get Jurisdiction Codes
+### Get Jurisdiction Codes
 
 Retrieves the available Jurisdiction Codes component of the NlfId.  This is the first character of the NlfId
 
 **End Point:** GET /routes/jurisdictions
 
-1.
-  1.
-    1. 5.1.1Response
+#### Response
 
-1.
-  1. 5.2Get Trans Route Codes
+### Get Trans Route Codes
 
 Retrieves the available Trans Route Codes component of the NlfId. This starts at the 5
 
@@ -534,6 +530,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNjE0MTEzNywtNzUyMjEzNjc1LC02MT
-YyODE2OTNdfQ==
+eyJoaXN0b3J5IjpbLTIwMjQzNTc5NzEsLTc1MjIxMzY3NSwtNj
+E2MjgxNjkzXX0=
 -->
