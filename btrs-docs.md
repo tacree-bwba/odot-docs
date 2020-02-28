@@ -412,7 +412,7 @@ GET /routes/bounds/SFRAIR00070\*\*C?year=2018&amp;lrmType=CTL\_3DECIMAL
 ```
 In this example, the state measure 86.043 corresponds to the county measure 0.000.  They likewise match for the end measures.
 
-**Example Request:** Get a state route boundary
+&#160;&#160;&#160;&#160;&#160;**Example Request:** Get a state route boundary
 
 GET /routes/bounds/SIR00070\*\*CPRE?year=2018&amp;lrmType=STL\_3DECIMAL
 ```json
@@ -428,7 +428,7 @@ Note that in this example, only attributes related to the state measures are pro
 
 This end point retrieves routes on both LrmTypes along with optional min/max boundaries.  This is a post request where the user passes a json object that defines the search configuration.  The choices made determine the attributes in the returned response.
 
-**End Point:** POST /routes/search/
+&#160;&#160;&#160;&#160;&#160;**End Point:** POST /routes/search/
 
 #### Request Body
 ```json
@@ -477,7 +477,7 @@ The response object minimally includes a list of objects that can contain only a
 
 POST /routes/ri/events
 
-**Request Body**
+&#160;&#160;&#160;&#160;&#160;**Request Body**
 ```json
 {
     "perpYear": 2018,
@@ -493,7 +493,7 @@ POST /routes/ri/events
     "directionalCodes": ["N", "C"]
 }
 ```
-**Response**
+&#160;&#160;&#160;&#160;&#160;**Response**
 ```json
 {
     "total": 2,
@@ -524,7 +524,7 @@ POST /routes/ri/events
 
 This end point retrieves route linear and point events based on the configuration of the request body object.
 
-**End Point:** POST /routes/ri/events/
+&#160;&#160;&#160;&#160;&#160;**End Point:** POST /routes/ri/events/
 
 #### Request Body
 ```json
@@ -876,6 +876,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – Retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MzQ5MzY3MiwyMTMyNjQxNjEwLC01NT
-c1OTAxMDUsNTczOTA0NDY3XX0=
+eyJoaXN0b3J5IjpbLTEzMjI4NjkxNzEsMjEzMjY0MTYxMCwtNT
+U3NTkwMTA1LDU3MzkwNDQ2N119
 -->
