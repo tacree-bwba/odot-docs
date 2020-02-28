@@ -593,9 +593,86 @@ In addition to the common fields, the requester can pick and choose other suppor
 POST /routes/ri/events
 
 **Request Body**
+```json
+{
+  "lrmType": "CTL_3DECIMAL",
+  "attributes": ["lanes", "leftMuniName", "leftMuniPopulation", "rightMuniName", "rightMuniPopulation" ],
 
+  "segments": [
+  	
+    {
+      "perpYear": 2018,
+      "routeId": "SFRAIR00071**C",
+      "beginMeasure": 15.30,
+      "endMeasure": 16.00
+    },
+    {
+      "id": "A",
+      "perpYear": 2017,
+      "routeId": "SFRAUS00023**C",
+      "beginMeasure": 0.6,
+      "endMeasure": 2.1
+    }
+  ]
+}
+```
 **Response**
+```json
+{
+    "0": [
+        {
+            "primarySegment.beginMeasure": 13.250,
+            "nlfId": "SFRAIR00071**C",
+            "perpYear": 2018,
+            "stl3dBeginNbr": 106.366,
+            "rightMuniPopulation": 787033,
+            "reenter": false,
+            "rightMuniName": "COLUMBUS",
+            "leftMuniName": "COLUMBUS",
+            "beginMeasure": 15.300,
+            "primarySegment.nlfId": "SFRAIR00070**C",
+            "leave": false,
+            "overlapInverseInd": false,
+            "stl3dEndNbr": 107.066,
+            "lanes": 6,
+            "primarySegment.endMeasure": 13.950,
+            "segmentLength": 0.700,
+            "id": "8af3f9b7705eeb8c017063461ccc010a",
+            "nlfIdSt": "SIR00071**CHAM",
+            "leftMuniPopulation": 787033,
+            "endMeasure": 16.000,
+            "primary": false
+        }
+    ],
+    "A": [
+        {
+            "nlfId": "SFRAUS00023**C",
+            "perpYear": 2017,
+            "rightMuniPopulation": 787033,
+            "reenter": false,
+            "rightMuniName": "COLUMBUS",
+            "leftMuniName": "COLUMBUS",
+            "beginMeasure": 0.600,
+            "leave": false,
+            "overlapInverseInd": false,
+            "lanes": 4,
+            "segmentLength": 0.900,
+            "id": "8af3f9b7705eeb8c017063461d03010b",
+            "nlfIdSt": "SUS00023**CSCI",
+            "leftMuniPopulation": 787033,
+            "endMeasure": 1.500,
+            "primary": true
+        },
+        {
+            "nlfId": "SFRAUS00023**C",
+            "perpYear": 2017,
+            "beginMeasure": 1.500,
+            ...
+        }
+    ]
+}
 
+```
 ### Get Routes RI Attributes
 
 Retrieves the available attributes/metadata for the Roadway Inventory (RI) dataset.  The attributes are available for use with the **Route Roadway Inventory Events** end point.
@@ -683,5 +760,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODM2NDU3NSw1NzM5MDQ0NjddfQ==
+eyJoaXN0b3J5IjpbLTU1NzU5MDEwNSw1NzM5MDQ0NjddfQ==
 -->
