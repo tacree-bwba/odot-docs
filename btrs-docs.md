@@ -141,7 +141,7 @@ Retrieves the current perp year.
 
 #### Parameters
 
-- year – The desired year to be retrieved
+- year – The desired year to be retrieved.
 
 ### Get Perp Year Bounds
 
@@ -476,7 +476,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTQ4MDcxOCwtMTA4OTgwNTM1NSwtMT
-Q2OTUwOTE1MiwxNzUzNzMzNjgzLDUxODYzOTczNiwtNzUyMjEz
-Njc1LC02MTYyODE2OTNdfQ==
+eyJoaXN0b3J5IjpbMTc5NTA5NTAyOCwtMTcxNDgwNzE4LC0xMD
+g5ODA1MzU1LC0xNDY5NTA5MTUyLDE3NTM3MzM2ODMsNTE4NjM5
+NzM2LC03NTIyMTM2NzUsLTYxNjI4MTY5M119
 -->
