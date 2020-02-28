@@ -198,7 +198,7 @@ Retrieves the available Jurisdiction Codes component of the NlfId.  This is the 
 
 Retrieves the available Trans Route Codes component of the NlfId. This starts at the 5<sup>th</sup> position of the NlfId and is 2 characters long.
 
-**End Point:** GET /routes/route\_codes
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/route\_codes
 
 #### Response
 ```json
@@ -234,7 +234,7 @@ Retrieves the available Trans Route Codes component of the NlfId. This starts at
 
 Retrieves the available Local Suffix Codes component of the NlfId.  This is the 12<sup>th</sup> character of the NlfId.
 
-**End Point:** GET /routes/local\_suffix
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/local\_suffix
 
 #### Response
 ```json
@@ -269,7 +269,7 @@ Retrieves the available Local Suffix Codes component of the NlfId.  This is the 
 
 Retrieves the available State Suffix Codes component of the NlfId.  This is the 13<sup>th</sup> character of the NlfId.
 
-**End Point:** GET /routes/state\_suffix
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/state\_suffix
 
 #### Response
 ```json
@@ -304,7 +304,7 @@ Retrieves the available State Suffix Codes component of the NlfId.  This is the 
 
 Retrieves the available Direction Codes component of the NlfId.  This is the 14<sup>th</sup> character of the NlfId. Note that this service is provided for completeness, though currently it only carries two values: ['N', 'C'].  For purposes of BTRS, only 'C' is used as the 'N' designation indicates a non-cardinal route which is not yet ready for public consumption.
 
-**End Point:** GET /routes/direction\_codes
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/direction\_codes
 
 #### Response
 ```json
@@ -323,7 +323,7 @@ Retrieves the available Direction Codes component of the NlfId.  This is the 14<
 
 This end point is provided to perform fast lookups of a NlfId (county route) based on search criteria being entered for example by a user in an autocomplete component.  The goal is for this end point to return results quickly so that the user doesn't experience a relevant delay in the response while typing.
 
-**End Point:** GET /routes/county\_route\_search
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/county\_route\_search
 
 #### Request Parameters
 
@@ -335,7 +335,7 @@ This end point is provided to perform fast lookups of a NlfId (county route) bas
 
 #### Response
 
-**Example Request:**
+&#160;&#160;&#160;&#160;&#160;**Example Request:**
 
 GET /routes/county\_route\_search?route\_criteria=fra70&amp;max\_results=100
 ```json
@@ -373,7 +373,7 @@ GET /routes/county\_route\_search?route\_criteria=fra70&amp;max\_results=100
 
 This end point retrieves route measure bounds information based on a provided route id.  The request supports both the County Route and State Route Lrm Types.
 
-**End Point:** GET /routes/bounds/:routeId
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/bounds/:routeId
 
 #### Path Variables
 
@@ -397,7 +397,7 @@ The response returns the routeId for the LrmType.  The nlfIdSt is always include
 - stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 - stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 
-**Example Request:** Get a county route boundary
+&#160;&#160;&#160;&#160;&#160;**Example Request:** Get a county route boundary
 GET /routes/bounds/SFRAIR00070\*\*C?year=2018&amp;lrmType=CTL\_3DECIMAL
 
 ```json
@@ -876,6 +876,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – Retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQwMjc2MDQsMjEzMjY0MTYxMCwtNT
-U3NTkwMTA1LDU3MzkwNDQ2N119
+eyJoaXN0b3J5IjpbMTk3MzQ5MzY3MiwyMTMyNjQxNjEwLC01NT
+c1OTAxMDUsNTczOTA0NDY3XX0=
 -->
