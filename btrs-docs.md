@@ -277,9 +277,7 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 
 **End Point:** POST /routes/search/
 
-1.
-  1.
-    1. 5.8.1Request Body
+#### Request Body
 
 1.
   1.
@@ -298,9 +296,7 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 - **descriptionCodes –** {List\&lt;String\&gt;, optional} List of route description codes on which to filter.
 - **directionalCodes –** {List\&lt;String\&gt;, optional} List of route direction codes on which to filter. By default, all queries are filtered with the [&quot;C&quot;] unless the non-cardinal direction is specified in the request.
 
-1.
-  1.
-    1. 5.8.2Response
+#### Response
 
 The response object minimally includes a list of objects that can contain only a routeId unless includeBoundaries is set to true.  In this case, it will include either state, county or both LRMs depending on the stateLrm/countyLrm request settings.
 
@@ -316,9 +312,7 @@ The response object minimally includes a list of objects that can contain only a
 - stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures
 - stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures
 
-1.
-  1.
-    1. 5.8.3Example Request:
+#### Example Request:
 
 POST /routes/ri/events
 
@@ -330,16 +324,13 @@ POST /routes/ri/events
 
 
 
-1.
-  1. 5.9Route Roadway Inventory Events
+### Route Roadway Inventory Events
 
 This end point retrieves route linear and point events based on the configuration of the request body object.
 
 **End Point:** POST /routes/ri/events/
 
-1.
-  1.
-    1. 5.9.1Request Body
+#### Request Body
 
 1.
   1.
@@ -357,9 +348,7 @@ This end point retrieves route linear and point events based on the configuratio
   - **oo**** beginMeasure –** {Decimal, optional, defaults to beginning of route} The begin measure of the events to retrieve.
   - **oo**** endMeasure –** {Decimal, optional, defaults to end of route} The end measure of the events to retrieve.
 
-1.
-  1.
-    1. 5.9.2Response
+#### Response
 
 The response object minimally includes a list of objects that can contain only a routeId unless includeBoundaries is set to true.  In this case, it will include either state, county or both LRMs depending on the stateLrm/countyLrm request settings.
 
@@ -392,9 +381,7 @@ The response object is a json map object where the key is the original id of the
 
 In addition to the common fields, the requester can pick and choose other supported fields within the roadway inventory data.  To view the complete list of available fields, see the **Routes RI Attributes** end point.
 
-1.
-  1.
-    1. 5.9.3Example Request:
+#### Example Request:
 
 POST /routes/ri/events
 
@@ -402,18 +389,15 @@ POST /routes/ri/events
 
 **Response**
 
-1.
-  1. 5.10Get Routes RI Attributes
+### Get Routes RI Attributes
 
 Retrieves the available attributes/metadata for the Roadway Inventory (RI) dataset.  The attributes are available for use with the **Route Roadway Inventory Events** end point.
 
 **End Point:** GET /routes/ri/attributes
 
-1.
-  1.
-    1. 5.10.1Response
+#### Response
 
-1. 6Streets API
+## Streets API
 
 The streets API provides information specifically relating street names to routes.  This linear event dataset does not fully cover all routes in the roadway inventory, but only the ones that actually have a street name.
 
@@ -506,6 +490,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYxNDE3MCwtNzUyMjEzNjc1LC02MTYyOD
-E2OTNdfQ==
+eyJoaXN0b3J5IjpbNTE4NjM5NzM2LC03NTIyMTM2NzUsLTYxNj
+I4MTY5M119
 -->
