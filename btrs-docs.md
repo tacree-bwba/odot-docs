@@ -464,15 +464,14 @@ This end point retrieves routes on both LrmTypes along with optional min/max bou
 
 The response object minimally includes a list of objects that can contain only a routeId unless includeBoundaries is set to true.  In this case, it will include either state, county or both LRMs depending on the stateLrm/countyLrm request settings.
 
+*Response Object*
 
-   5.8.2.1 Response Object
-
-- nlfId – The routeId for the county LRM
-- nlfIdSt – The routeId for the state LRM
-- ctlBeginNbr – The county LRM begin boundary
-- ctlEndNbr – The county LRM end boundary
-- stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures
-- stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures
+- nlfId – The routeId for the county LRM.
+- nlfIdSt – The routeId for the state LRM.
+- ctlBeginNbr – The county LRM begin boundary.
+- ctlEndNbr – The county LRM end boundary.
+- stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
+- stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 
 #### Example Request:
 
@@ -638,6 +637,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjczNjE3NjYsLTIwNDk4ODYyODcsLT
-Y1Mjc4MzM0NCwxODY0MTYzNjM5XX0=
+eyJoaXN0b3J5IjpbLTI5Njk1NzI2LC0xMTI3MzYxNzY2LC0yMD
+Q5ODg2Mjg3LC02NTI3ODMzNDQsMTg2NDE2MzYzOV19
 -->
