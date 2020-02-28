@@ -28,9 +28,9 @@
 6. [Streets API](#streets-api)
 	* [Street Name Attributes](#street-name-attributes)
 	* [Street Event Search](#street-event-search)
-	* [Street Name Search](#street-name-sear
-7. [Boundary API]
-	* [EndPoints]
+	* [Street Name Search](#street-name-search)
+7. [Boundary API](#boundary-api)
+	* [EndPoints](#endpoints)
 
 ## About This Document
 
@@ -403,27 +403,21 @@ The streets API provides information specifically relating street names to route
 
 The data also relates the street name to the governing body of the route, specifically the county, township and municipality.  There are cases where a street can be in 2 different municipalities (jurisdictional split) and/or a split between townships and municipalities.  In these cases there will be a record for each governing body.
 
-1.
-  1. 6.1Street Name Attributes
+### Street Name Attributes
 
 Retrieves the available attributes/metadata for the Street Event dataset.  The attributes are available for use with the **Street Search** end point.
 
 **End Point:** GET /streets/attributes
 
-1.
-  1.
-    1. 6.1.1Response
+#### Response
 
-1.
-  1. 6.2Street Event Search
+### Street Event Search
 
 This end point retrieves street name events based on the posted search criteria
 
 **End Point:** POST /streets/search
 
-1.
-  1.
-    1. 6.2.1Request Body
+#### Request Body
 
 1.
   1.
@@ -490,6 +484,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzODYzMjEwLDUxODYzOTczNiwtNzUyMj
-EzNjc1LC02MTYyODE2OTNdfQ==
+eyJoaXN0b3J5IjpbMTc1MzczMzY4Myw1MTg2Mzk3MzYsLTc1Mj
+IxMzY3NSwtNjE2MjgxNjkzXX0=
 -->
