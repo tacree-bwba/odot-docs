@@ -393,20 +393,30 @@ The response returns the routeId for the LrmType.  The nlfIdSt is always include
 - nlfId – The routeId for the county LRM.
 - nlfIdSt – The routeId for the state LRM.
 - ctlBeginNbr – The county LRM begin boundary.
-- ctlEndNbr – The county LRM end boundary
+- ctlEndNbr – The county LRM end boundary.
 - stlBeginNbr – The state LRM begin boundary.  If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
-- stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures
--
+- stlEndNbr – The state LRM end boundary. If the LRM type is for the county route, then the boundaries are matched to those of the county measures.
 
 **Example Request:** Get a county route boundary
-
 GET /routes/bounds/SFRAIR00070\*\*C?year=2018&amp;lrmType=CTL\_3DECIMAL
 
+```json
+{
+    "nlfId": "SFRAIR00070**C",
+    "nlfIdSt": "SIR00070**CPRE",
+    "ctlBeginNbr": 0.000,
+    "ctlEndNbr": 24.940,
+    "stlBeginNbr": 86.043,
+    "stlEndNbr": 110.983
+}
+```
 In this example, the state measure 86.043 corresponds to the county measure 0.000.  They likewise match for the end measures.
 
 **Example Request:** Get a state route boundary
 
 GET /routes/bounds/SIR00070\*\*CPRE?year=2018&amp;lrmType=STL\_3DECIMAL
+
+
 
 Note that in this example, only attributes related to the state measures are provided, and the full boundaries of the route are provided
 
@@ -615,5 +625,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Mjc4MzM0NCwxODY0MTYzNjM5XX0=
+eyJoaXN0b3J5IjpbLTczMDMzMzc1NCwtNjUyNzgzMzQ0LDE4Nj
+QxNjM2MzldfQ==
 -->
