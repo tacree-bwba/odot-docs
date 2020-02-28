@@ -197,10 +197,7 @@ Retrieves the available Jurisdiction Codes component of the NlfId.  This is the 
 ```
 ### Get Trans Route Codes
 
-Retrieves the available Trans Route Codes component of the NlfId. This starts at the 5th 
-
-# th
- position of the NlfId and is 2 characters long.
+Retrieves the available Trans Route Codes component of the NlfId. This starts at the 5[^th] position of the NlfId and is 2 characters long.
 
 **End Point:** GET /routes/route\_codes
 
@@ -508,5 +505,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzkxMjEyMCw1MDA4NzczNzJdfQ==
+eyJoaXN0b3J5IjpbMTg0NzU0NTUxNSw1MDA4NzczNzJdfQ==
 -->
