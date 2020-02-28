@@ -85,7 +85,7 @@ The county traversal LRM represents routes as they traverse through a county.  R
 - **nlfIdSt** – This field identifies the state system routeId.
 - **beginMeasure** – The start measure of a linear event based on the lrmType.  For county measures, this is the begin measure of a route within a county.  For state, this is the state offset for the entire route traversal.
 - **endMeasure** = The end measure of the linear event based on the lrmType.  For county measures, this is the end measure of a route within a county.  For state, this is the state offset for the entire route traversal.
-- **measure** – The measure value for a point event.  This can be either state or county depending on the lrmType
+- **measure** – The measure value for a point event.  This can be either state or county depending on the lrmType.
 - **leaveInd** – Identifies that a geometric discontinuity is associated with the endMeasure.  The type of discontinuity is identified by the **leaveReenterTypeCd.  ** This field has a Boolean type.
 - **reenterInd –** Identifies that a geometric discontinuity is associated with the beginMeasure.  The type of discontinuity is identified by the **leaveReenterTypeCd.  ** This field has a Boolean type.
 - **leaveReenterTypeCd –** Identifies the type of leave/reenter when applicable.  Possible values include the following:
@@ -534,6 +534,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE5OTgxNzMsLTc1MjIxMzY3NSwtNj
-E2MjgxNjkzXX0=
+eyJoaXN0b3J5IjpbMTcxNjE0MTEzNywtNzUyMjEzNjc1LC02MT
+YyODE2OTNdfQ==
 -->
