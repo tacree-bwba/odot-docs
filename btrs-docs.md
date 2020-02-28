@@ -584,7 +584,7 @@ The response object is a json map object where the key is the original id of the
 - stl3dBeginNbr – The state LRM begin boundary. This is included when the county LRM is requested for reference.
 - stl3dEndNbr – The state LRM end boundary. This is included when the county LRM is requested for reference.
 
-**Event Object Optional Attributes**
+&#160;&#160;&#160;&#160;&#160;*Event Object Optional Attributes*
 
 In addition to the common fields, the requester can pick and choose other supported fields within the roadway inventory data.  To view the complete list of available fields, see the **Routes RI Attributes** end point.
 
@@ -592,7 +592,7 @@ In addition to the common fields, the requester can pick and choose other suppor
 
 POST /routes/ri/events
 
-**Request Body**
+&#160;&#160;&#160;&#160;&#160;**Request Body**
 ```json
 {
   "lrmType": "CTL_3DECIMAL",
@@ -876,6 +876,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – Retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Njk4Mzk4NywyMTMyNjQxNjEwLC01NT
-c1OTAxMDUsNTczOTA0NDY3XX0=
+eyJoaXN0b3J5IjpbLTE3NjgwNjMwMzcsMjEzMjY0MTYxMCwtNT
+U3NTkwMTA1LDU3MzkwNDQ2N119
 -->
