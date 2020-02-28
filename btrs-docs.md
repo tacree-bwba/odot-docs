@@ -131,13 +131,13 @@ The perp year API provides details related to getting, validating and identifyin
 
 Retrieves the current perp year.
 
-**End Point:** GET /perpyear
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /perpyear
 
 ### Get Current Perp Year by Year
 
 Retrieves the current perp year.
 
-**End Point:** GET /perpyear/:year
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /perpyear/:year
 
 #### Parameters
 
@@ -147,7 +147,7 @@ Retrieves the current perp year.
 
 Retrieves the range of available perp years.  The result is an array with the min and max perp year supported.  Note that prior to 2008, only state system routes are supported.
 
-**End Point:** GET /perpyear/bounds
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /perpyear/bounds
 
 #### Response
 ```json
@@ -164,7 +164,7 @@ The routes API provides information about finding and searching routes as well a
 
 Retrieves the available Jurisdiction Codes component of the NlfId.  This is the first character of the NlfId.
 
-**End Point:** GET /routes/jurisdictions
+&#160;&#160;&#160;&#160;&#160;**End Point:** GET /routes/jurisdictions
 
 #### Response
 ```json
@@ -876,6 +876,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – Retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – Retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjY0MTYxMCwtNTU3NTkwMTA1LDU3Mz
-kwNDQ2N119
+eyJoaXN0b3J5IjpbLTE4MTQwMjc2MDQsMjEzMjY0MTYxMCwtNT
+U3NTkwMTA1LDU3MzkwNDQ2N119
 -->
