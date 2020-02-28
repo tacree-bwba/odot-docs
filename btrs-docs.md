@@ -221,37 +221,28 @@ This end point is provided to perform fast lookups of a NlfId (county route) bas
 - **centerline** – {Boolean, optional, default=true} – This field indicates that only Cardinal routes are provided in the result.  It is optional as the default value is set to true.  Non-cardinal routes should only be included in the result with review by the Office of Technical Services to make sure that non-cardinal routes are sustainable for the user&#39;s usage.
 - **counties** – {List\&lt;String\&gt;, optional} an optional list of counties which indicates that they are the only counties included in the search.
 
-1.
-  1.
-    1. 5.6.2Response
+#### Response
 
 **Example Request:**
 
 GET /routes/county\_route\_search?route\_criteria=fra70&amp;max\_results=100
 
-1.
-  1. 5.7Route Bounds Search
+### Route Bounds Search
 
 This end point retrieves route measure bounds information based on a provided route id.  The request supports both the County Route and State Route Lrm Types.
 
 **End Point:** GET /routes/bounds/:routeId
 
-1.
-  1.
-    1. 5.7.1Path Variables
+#### Path Variables
 
 - **routeId –** {String, required} This identifies a routeId from which to request boundary details.  LrmTypes of both CTL\_3DECIMAL and STL\_3DECIMAL are supported.
 
-1.
-  1.
-    1. 5.7.2Request Parameters
+#### Request Parameters
 
 - **year –** {Integer, optional} The perp year on which to search for the route.  This field is optional, and if not provided, shall use the current active perp year.
 - **lrmType–** {String, optional} This accepts an enumerated type of the following values: [CTL\_3DECIMAL, STL\_3DECIMAL].  If not provided, it defaults to CTL\_3DECIMAL
 
-1.
-  1.
-    1. 5.7.3Response
+#### Response
 
 The response returns the routeId for the LrmType.  The nlfIdSt is always included in the response.  If the lrmType is STL\_3DECIMAL, then the nlfId is NOT included.  If the lrmType is CTL\_3DECIMAL, then the nlfId is included along with the corresponding measures for the county LRM.
 
@@ -280,8 +271,7 @@ GET /routes/bounds/SIR00070\*\*CPRE?year=2018&amp;lrmType=STL\_3DECIMAL
 
 Note that in this example, only attributes related to the state measures are provided, and the full boundaries of the route are provided
 
-1.
-  1. 5.8Route Search
+### Route Search
 
 This end point retrieves routes on both LrmTypes along with optional min/max boundaries.  This is a post request where the user passes a json object that defines the search configuration.  The choices made determine the attributes in the returned response.
 
@@ -516,6 +506,6 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU2MDEzMTIsLTc1MjIxMzY3NSwtNj
-E2MjgxNjkzXX0=
+eyJoaXN0b3J5IjpbNDYxNDE3MCwtNzUyMjEzNjc1LC02MTYyOD
+E2OTNdfQ==
 -->
