@@ -64,7 +64,7 @@ LRM stands for Linear Referencing Method and represents a type of linear referen
 
 ### Temporality
 
-Unlike traditional BTRS based data, all data provided by the API has a temporal component to it identified by the data&#39;s Perp Year.  Perp Year identifies the year from which the data is being published, and is usually 1 year less than the current calendar year.  For example, the perp year 2018 represents the version of the roadway inventory that was published and to which all data as of 1/12019 is collected against.  A concrete example of this would be 2019 Pavement Condition Data (PCR) which is collected and published against the 2018 perp year LRS.
+Unlike traditional BTRS based data, all data provided by the API has a temporal component to it identified by the data&#39;s Perp Year.  Perp Year identifies the year from which the data is being published, and is usually 1 year less than the current calendar year.  For example, the perp year 2018 represents the version of the roadway inventory that was published and to which all data as of 1/1/2019 is collected against.  A concrete example of this would be 2019 Pavement Condition Data (PCR) which is collected and published against the 2018 Perp Year LRS.
 
 ### LRM Type
 
@@ -80,7 +80,7 @@ The LRM Types are identified using one of the following 2 codes:
 The county traversal LRM represents routes as they traverse through a county.  Routes and measures are identified using the following keys that shall be included in most event request responses:
 
 - **perpYear –** As all data in the system includes historical information, a perpYear is needed to identify the version of the LRM being queried.  The perpYear identifies the year desired; however, it is optional, as when not specified, the current one is always used.
-- **routeId** – The identifier of a route based on the lrmType.  When the route type is county, this shall be the route&#39;s nlfId e.g. SFRAIR00070\*\*C.  If the lrmType is state, the routeId has the following form: SIR00070\*\*CPRE.  In this case, the county ID is moved to the end of the identifier and represents the county within the state where the route originates.
+- **routeId** – The identifier of a route based on the lrmType.  When the route type is county, this shall be the route&#39;s nlfId e.g. SFRAIR00070\*\*C.  If the *lrmType is state, the routeId has the following form: SIR00070\*\*CPRE.  In this case, the county ID is moved to the end of the identifier and represents the county within the state where the route originates.
 - **nlfId** – This field identifies the county routeId.
 - **nlfIdSt** – This field identifies the state system routeId.
 - **beginMeasure** – The start measure of a linear event based on the lrmType.  For county measures, this is the begin measure of a route within a county.  For state, this is the state offset for the entire route traversal.
@@ -476,6 +476,7 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk1MDkxNTIsMTc1MzczMzY4Myw1MT
-g2Mzk3MzYsLTc1MjIxMzY3NSwtNjE2MjgxNjkzXX0=
+eyJoaXN0b3J5IjpbLTE3Njc0NTY4MTUsLTE0Njk1MDkxNTIsMT
+c1MzczMzY4Myw1MTg2Mzk3MzYsLTc1MjIxMzY3NSwtNjE2Mjgx
+NjkzXX0=
 -->
