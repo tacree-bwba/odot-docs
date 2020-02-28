@@ -6,7 +6,7 @@
 2.  [Environments](#environments)
 3.  [API Overview](#api-overview)
 	* [LRS and LRM](#lrs-and-lrm)
-	* Temporality
+	* [Temporality](#temporality)
 	* LRM Type
 	* Centerline Routes
 4. [Perp Year API](#perp-year-api)
@@ -62,12 +62,11 @@ LRS stands for Linear Referencing System and is a collection of LRMs that can be
 
 LRM stands for Linear Referencing Method and represents a type of linear referencing supported by RIMS.  For purposes of this document, 2 LRMs are the focus, County and State.  Further, each of the LRMs are broken down by perpYear, so each year a new version of these LRMs are published.
 
-Temporality
+### Temporality
 
 Unlike traditional BTRS based data, all data provided by the API has a temporal component to it identified by the data&#39;s Perp Year.  Perp Year identifies the year from which the data is being published, and is usually 1 year less than the current calendar year.  For example, the perp year 2018 represents the version of the roadway inventory that was published and to which all data as of 1/12019 is collected against.  A concrete example of this would be 2019 Pavement Condition Data (PCR) which is collected and published against the 2018 perp year LRS.
 
-1.
-  1. 3.3LRM Type
+### LRM Type
 
 Many of the requests have an optional lrmType parameter.  The LRM Type identifies when the request should use the State traversal of a route, or the County traversal.  If one isn&#39;t provided, **the county traversal is used by default**.  There may be cases in the future that some endpoints may also support 2-decimal versions of these end points to support legacy BTRS applications, but as of now, everything is going to be assumed that measures shall use 3-decimal accuracy.
 
@@ -76,9 +75,7 @@ The LRM Types are identified using one of the following 2 codes:
 - CTL\_3DECIMAL – this is the county traversal using 3-decimal measure accuracy.
 - STL\_3DECIMAL – This is the state traversal using 3-decimal measure accuracy.
 
-1.
-  1.
-    1. 3.3.1LRM Type Traversal Fields
+#### LRM Type Traversal Fields
 
 The county traversal LRM represents routes as they traverse through a county.  Routes and measures are identified using the following keys that shall be included in most event request responses:
 
@@ -99,8 +96,7 @@ The county traversal LRM represents routes as they traverse through a county.  R
   - JOURNAL\_GAP – False discontinuities that occur when the digitizing of the road jumps from the cardinal side of the road to the non-cardinal.  This is done to appease cases where a route has a cardinal overlap on the non-cardinal side of a route.
   - OTHER – Unreconciled discontinuities.
 
-1.
-  1. 3.4Centerline Routes
+### Centerline Routes
 
 The API is currently making a distinction between &quot;centerline&quot; routes and non-centerline.  Centerline routes only include cardinal directed routes, and the last character of the routeId shall be a &#39;C&#39; character.
 
@@ -545,6 +541,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDc5ODE1MDEsLTExMTcyMzg5MjBdfQ
-==
+eyJoaXN0b3J5IjpbLTg3OTA2MDU5NSwtMTExNzIzODkyMF19
 -->
