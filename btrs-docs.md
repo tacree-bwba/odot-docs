@@ -11,9 +11,9 @@
 	* [Centerline Routes](#centerline-routes)
 4. [Perp Year API](#perp-year-api)
 	* [Perp Year Object](#perp-year-object)
-4.2 Get Current Perp Year
-4.3 Get Current Perp Year by Year
-4.4 Get Perp Year Bounds
+	* [Get Current Perp Year](#get-current-perp-yar)
+	* [Get Current Perp Year by Year
+	* [Get Perp Year Bounds
 5.  Routes API
 5.1 Get Jurisdiction Codes
 5.2 Get Trans Route Codes
@@ -541,5 +541,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NjY4NjMxNywtMTExNzIzODkyMF19
+eyJoaXN0b3J5IjpbLTIwNjI2MjI2NywtMTExNzIzODkyMF19
 -->
