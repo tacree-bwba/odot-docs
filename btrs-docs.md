@@ -331,7 +331,7 @@ This end point is provided to perform fast lookups of a NlfId (county route) bas
 - **year** – {Integer, optional} The perp year on which to search for the routes.  This field is optional, and if not provided, shall use the current active perp year.
 - **max\_results** – {Integer, optional but recommended} This parameter indicates the maximum number of results to return from the query.  While it is optional, it is highly recommended to reduce the cost of serializing large payloads down to the user and keep the interface responsive.  A good recommended value for this would be 100 or less.  It is rare that a user would scroll through these results before providing another character that would further narrow the search.
 - **centerline** – {Boolean, optional, default=true} – This field indicates that only Cardinal routes are provided in the result.  It is optional as the default value is set to true.  Non-cardinal routes should only be included in the result with review by the Office of Technical Services to make sure that non-cardinal routes are sustainable for the user&#39;s usage.
-- **counties** – {List<String\&gt;, optional} an optional list of counties which indicates that they are the only counties included in the search.
+- **counties** – {List<String, optional} an optional list of counties which indicates that they are the only counties included in the search.
 
 #### Response
 
@@ -588,5 +588,5 @@ This API provides end points for retrieving boundary datasets such as County, Mu
 - GET /boundaries/townships } – retrieve all township records for the current perp year.
 - GET /boundaries/townships?county={countyCode} – retrieve the township list by county code for the current perp year.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTcxMTU4NzcsMTMwNTY5OTMzMF19
+eyJoaXN0b3J5IjpbLTExMTkyODY1MDksMTMwNTY5OTMzMF19
 -->
